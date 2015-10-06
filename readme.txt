@@ -1,0 +1,9 @@
+TP1
+afficheur : ok
+
+TP2
+debut raté
+
+TP2_2
+début ok
+Lors de l'appui sur le bouton "droit" de la carte un nombre aléatoire parmis une chaine est généré
