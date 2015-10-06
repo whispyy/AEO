@@ -1,0 +1,3 @@
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl Enable190_drc.vhf -w /home/m1/wissocq/Documents/M1S1/AEO/TP1/Enable190.sch 
+sch2sym -intstyle ise -family spartan6 -refsym Enable190 /home/m1/wissocq/Documents/M1S1/AEO/TP1/Enable190.sch /home/m1/wissocq/Documents/M1S1/AEO/TP1/Enable190.sym 
+sch2sym -intstyle ise -family spartan6 -refsym Enable190 /home/m1/wissocq/Documents/M1S1/AEO/TP1/Enable190.sch /home/m1/wissocq/Documents/M1S1/AEO/TP1/Enable190.sym 

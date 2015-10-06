@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/m1/durand/Documents/TP2/RDM.ncd
+OUTFILE=/home/m1/durand/Documents/TP2/RDM.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=/home/m1/durand/Documents/TP2
+LICENSE=WebPack
+USER_INFO=0_0_579

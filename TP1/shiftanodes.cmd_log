@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl shiftanodes_drc.vhf -w /home/m1/wissocq/Documents/M1S1/AEO/TP1/shiftanodes.sch 
+sch2sym -intstyle ise -family spartan6 -refsym shiftanodes /home/m1/wissocq/Documents/M1S1/AEO/TP1/shiftanodes.sch /home/m1/wissocq/Documents/M1S1/AEO/TP1/shiftanodes.sym 
