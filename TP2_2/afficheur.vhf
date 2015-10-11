@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 12.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : afficheur.vhf
--- /___/   /\     Timestamp : 10/06/2015 18:23:47
+-- /___/   /\     Timestamp : 10/11/2015 14:57:25
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -sympath /home/m1/durand/Documents/AEO/TP2_2/ipcore_dir/tmp/_cg -intstyle ise -family spartan6 -flat -suppress -vhdl /home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf -w /home/m1/durand/Documents/AEO/TP1/afficheur.sch
+--Command: sch2hdl -sympath "D:/Documents and Settings/JF/My Documents/Fac/AEO/TP2_2/ipcore_dir/tmp/_cg" -intstyle ise -family spartan6 -flat -suppress -vhdl "D:/Documents and Settings/JF/My Documents/Fac/AEO/TP2_2/afficheur.vhf" -w "D:/Documents and Settings/JF/My Documents/Fac/AEO/TP1/afficheur.sch"
 --Design Name: afficheur
 --Device: spartan6
 --Purpose:
@@ -329,8 +329,8 @@ architecture BEHAVIORAL of Enable190_MUSER_afficheur is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_2";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_3";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_0";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_1";
 begin
    XLXI_1 : CB16CE_HXILINX_afficheur
       port map (C=>clk,
@@ -412,10 +412,10 @@ architecture BEHAVIORAL of Mux4x4_MUSER_afficheur is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_4";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_5";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_6";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_7";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_2";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_3";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_4";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_5";
 begin
    XLXI_1 : M4_1E_HXILINX_afficheur
       port map (D0=>I0(3),
@@ -518,7 +518,7 @@ architecture BEHAVIORAL of afficheur is
              anodes    : out   std_logic_vector (3 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_8";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_6";
 begin
    XLXI_1 : Mux4x4_MUSER_afficheur
       port map (I0(3 downto 0)=>din(3 downto 0),

@@ -1,39 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<document OS="lin64" product="ISE" version="12.4">
+<document OS="nt" product="ISE" version="12.4">
 
   <!--The data in this file is primarily intended for consumption by Xilinx tools.
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Tue Oct  6 18:43:36 2015">
+  <application stringID="NgdBuild" timeStamp="Sun Oct 11 16:41:48 2015">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
-          <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="/opt/Xilinx/12.4/ISE_DS/ISE//bin/lin64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/oracle/instantclient_11_2:/opt/oracle/sqldeveloper/sqldeveloper/bin"/>
+          <item stringID="variable" value="Path"/>
+          <item stringID="value" value="D:\Xilinx\12.4\ISE_DS\ISE\\lib\nt;D:\Xilinx\12.4\ISE_DS\ISE\\bin\nt;D:\Xilinx\12.4\ISE_DS\PlanAhead\bin;D:\Xilinx\12.4\ISE_DS\ISE\bin\nt;D:\Xilinx\12.4\ISE_DS\ISE\lib\nt;D:\Xilinx\12.4\ISE_DS\EDK\bin\nt;D:\Xilinx\12.4\ISE_DS\EDK\lib\nt;D:\Xilinx\12.4\ISE_DS\common\bin\nt;D:\Xilinx\12.4\ISE_DS\common\lib\nt;D:\Program Files\NVIDIA Corporation\PhysX\Common;D:\WINDOWS\system32;D:\WINDOWS;D:\WINDOWS\System32\Wbem;D:\Program Files\Git\cmd"/>
         </row>
         <row stringID="row" value="1">
-          <item stringID="variable" value="XILINX"/>
-          <item stringID="value" value="/opt/Xilinx/12.4/ISE_DS/ISE/"/>
+          <item stringID="variable" value="PATHEXT"/>
+          <item stringID="value" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH"/>
         </row>
         <row stringID="row" value="2">
-          <item stringID="variable" value="LD_LIBRARY_PATH"/>
-          <item stringID="value" value="/opt/Xilinx/12.4/ISE_DS/ISE//lib/lin64"/>
+          <item stringID="variable" value="XILINX"/>
+          <item stringID="value" value="D:\Xilinx\12.4\ISE_DS\ISE\"/>
+        </row>
+        <row stringID="row" value="3">
+          <item stringID="variable" value="XILINX_DSP"/>
+          <item stringID="value" value="D:\Xilinx\12.4\ISE_DS\ISE"/>
+        </row>
+        <row stringID="row" value="4">
+          <item stringID="variable" value="XILINX_EDK"/>
+          <item stringID="value" value="D:\Xilinx\12.4\ISE_DS\EDK"/>
+        </row>
+        <row stringID="row" value="5">
+          <item stringID="variable" value="XILINX_PLANAHEAD"/>
+          <item stringID="value" value="D:\Xilinx\12.4\ISE_DS\PlanAhead"/>
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
-        <item stringID="User_EnvOsname" value="Debian"/>
-        <item stringID="User_EnvOsrelease" value="Debian GNU/Linux 8.2 (jessie)"/>
+        <item stringID="User_EnvOsname" value="Microsoft Windows XP Professional"/>
+        <item stringID="User_EnvOsrelease" value="Service Pack 3  (build 2600)"/>
       </item>
-      <item stringID="User_EnvHost" value="a16p20"/>
+      <item stringID="User_EnvHost" value="jf-31bdb1ddcdad"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz"/>
-          <item stringID="speed" value="3631.804 MHz"/>
+          <item stringID="arch" value="              Intel(R) Pentium(R) 4 CPU 2.93GHz"/>
+          <item stringID="speed" value="2933 MHz"/>
         </row>
       </table>
     </section>
@@ -44,19 +56,20 @@
         <item DEFAULT="None" label="-dd" stringID="NGDBUILD_output_dir" value="_ngo"/>
         <item DEFAULT="None" label="-p" stringID="NGDBUILD_partname" value="xc6slx16-csg324-3"/>
         <item DEFAULT="None" label="-sd" stringID="NGDBUILD_search_path" value="ipcore_dir/tmp/_cg"/>
-        <item DEFAULT="None" label="-uc" stringID="NGDBUILD_ucf_file" value="/home/m1/durand/Documents/AEO/TP1/Nexys3.ucf"/>
+        <item DEFAULT="None" label="-uc" stringID="NGDBUILD_ucf_file" value="D:/Documents and Settings/JF/My Documents/Fac/AEO/TP1/Nexys3.ucf"/>
       </section>
     </task>
     <task stringID="NGDBUILD_REPORT">
       <section stringID="NGDBUILD_DESIGN_SUMMARY">
         <item dataType="int" stringID="NGDBUILD_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="NGDBUILD_FILTERED_WARNINGS" value="0"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_WARNINGS" value="16"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_WARNINGS" value="8"/>
         <item dataType="int" stringID="NGDBUILD_FILTERED_INFOS" value="0"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_INFOS" value="16"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INFOS" value="8"/>
       </section>
       <section stringID="NGDBUILD_PRE_UNISIM_SUMMARY">
         <item dataType="int" stringID="NGDBUILD_NUM_AND3" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_BUF" value="16"/>
         <item dataType="int" stringID="NGDBUILD_NUM_BUFG" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_DCM_SP" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FD" value="7"/>
@@ -68,18 +81,19 @@
         <item dataType="int" stringID="NGDBUILD_NUM_INV" value="8"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="30"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="3"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="6"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="11"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="7"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="6"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="11"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="30"/>
         <item dataType="int" stringID="NGDBUILD_NUM_NOR2" value="2"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="11"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="19"/>
         <item dataType="int" stringID="NGDBUILD_NUM_VCC" value="3"/>
         <item dataType="int" stringID="NGDBUILD_NUM_XOR2" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="32"/>
       </section>
       <section stringID="NGDBUILD_POST_UNISIM_SUMMARY">
         <item dataType="int" stringID="NGDBUILD_NUM_AND3" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_BUF" value="16"/>
         <item dataType="int" stringID="NGDBUILD_NUM_BUFG" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_DCM_SP" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FD" value="7"/>
@@ -91,12 +105,12 @@
         <item dataType="int" stringID="NGDBUILD_NUM_INV" value="8"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="30"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="3"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="6"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="11"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="7"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="6"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="11"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="30"/>
         <item dataType="int" stringID="NGDBUILD_NUM_NOR2" value="2"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="11"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="19"/>
         <item dataType="int" stringID="NGDBUILD_NUM_VCC" value="3"/>
         <item dataType="int" stringID="NGDBUILD_NUM_XOR2" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="32"/>

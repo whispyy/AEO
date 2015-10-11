@@ -1,4 +1,4 @@
-Release 12.4 Map M.81d (lin64)
+Release 12.4 Map M.81d (nt)
 Xilinx Mapping Report File for Design 'toplevel'
 
 Design Information
@@ -9,7 +9,7 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.52.76.2 $
-Mapped Date    : Tue Oct  6 18:43:37 2015
+Mapped Date    : Sun Oct 11 16:41:50 2015
 
 Design Summary
 --------------
@@ -21,11 +21,11 @@ Slice Logic Utilization:
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                         58 out of   9,112    1%
-    Number used as logic:                       55 out of   9,112    1%
-      Number using O6 output only:              20
+  Number of Slice LUTs:                         57 out of   9,112    1%
+    Number used as logic:                       54 out of   9,112    1%
+      Number using O6 output only:              18
       Number using O5 output only:              28
-      Number using O5 and O6:                    7
+      Number using O5 and O6:                    8
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   2,176    0%
     Number used exclusively as route-thrus:      3
@@ -34,11 +34,11 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    25 out of   2,278    1%
+  Number of occupied Slices:                    28 out of   2,278    1%
   Number of LUT Flip Flop pairs used:           71
     Number with an unused Flip Flop:            16 out of      71   22%
-    Number with an unused LUT:                  13 out of      71   18%
-    Number of fully used LUT-FF pairs:          42 out of      71   59%
+    Number with an unused LUT:                  14 out of      71   19%
+    Number of fully used LUT-FF pairs:          41 out of      71   57%
     Number of unique control sets:               6
     Number of slice register sites lost
       to control set restrictions:              22 out of  18,224    1%
@@ -50,8 +50,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        13 out of     232    5%
-    Number of LOCed IOBs:                       13 out of      13  100%
+  Number of bonded IOBs:                        21 out of     232    9%
+    Number of LOCed IOBs:                       21 out of      21  100%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -84,11 +84,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                1.97
+Average Fanout of Non-Clock Nets:                1.96
 
-Peak Memory Usage:  464 MB
-Total REAL time to MAP completion:  4 secs 
-Total CPU time to MAP completion:   3 secs 
+Peak Memory Usage:  202 MB
+Total REAL time to MAP completion:  16 secs 
+Total CPU time to MAP completion:   16 secs 
 
 Table of Contents
 -----------------
@@ -111,13 +111,9 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
-WARNING:Security:42 - Your software subscription period has lapsed. Your current
-version of Xilinx tools will continue to function, but you no longer qualify for
-Xilinx software updates or new releases.
 
 Section 3 - Informational
 -------------------------
-INFO:Security:54 - 'xc6slx16' is a WebPack part.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
    rate limited output drivers. The delay on speed critical single ended outputs
@@ -133,7 +129,7 @@ INFO:Pack:1650 - Map created a placed design.
 Section 4 - Removed Logic Summary
 ---------------------------------
    1 block(s) removed
-   6 block(s) optimized away
+   9 block(s) optimized away
    2 signal(s) removed
 
 Section 5 - Removed Logic
@@ -167,6 +163,9 @@ VCC 		XLXI_5/XLXI_1/XLXI_5
 GND 		XLXI_5/XLXI_5/XLXI_1/XST_GND
 VCC 		XLXI_5/XLXI_5/XLXI_1/XST_VCC
 GND 		XST_GND
+LUT4 		XLXI_5/XLXI_2/Mram_sevenseg41
+LUT4 		sevenseg<0>1
+LUT4 		sevenseg<5>1
 
 To enable printing of redundant blocks removed and signals merged, set the
 detailed map report option and rerun map.
@@ -184,6 +183,14 @@ Section 6 - IOB Properties
 | anodes<3>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | btn0                               | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | clk                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| led<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| led<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| led<2>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| led<3>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| led<4>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| led<5>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| led<6>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| led<7>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | sevenseg<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | sevenseg<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | sevenseg<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |

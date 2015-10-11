@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family spartan6 -refsym broadcast {D:/Documents and Settings/JF/My Documents/Fac/AEO/TP2_2/broadcast.sch} {D:/Documents and Settings/JF/My Documents/Fac/AEO/TP2_2/broadcast.sym} 
+sch2hdl -sympath {D:/Documents and Settings/JF/My Documents/Fac/AEO/TP2_2/ipcore_dir/tmp/_cg} -intstyle ise -family spartan6 -flat -suppress -vhdl broadcast_drc.vhf -w {D:/Documents and Settings/JF/My Documents/Fac/AEO/TP2_2/broadcast.sch} 
+sch2sym -intstyle ise -family spartan6 -refsym broadcast {D:/Documents and Settings/JF/My Documents/Fac/AEO/TP2_2/broadcast.sch} {D:/Documents and Settings/JF/My Documents/Fac/AEO/TP2_2/broadcast.sym} 
+sch2hdl -sympath {D:/Documents and Settings/JF/My Documents/Fac/AEO/TP2_2/ipcore_dir/tmp/_cg} -intstyle ise -family spartan6 -flat -suppress -vhdl broadcast_drc.vhf -w {D:/Documents and Settings/JF/My Documents/Fac/AEO/TP2_2/broadcast.sch} 

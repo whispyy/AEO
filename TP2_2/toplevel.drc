@@ -1,7 +1,7 @@
-Release 12.4 Drc M.81d (lin64)
+Release 12.4 Drc M.81d (nt)
 Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
-Tue Oct  6 18:43:59 2015
+Sun Oct 11 16:43:39 2015
 
 drc -z toplevel.ncd toplevel.pcf
 
