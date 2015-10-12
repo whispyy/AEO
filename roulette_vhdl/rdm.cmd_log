@@ -1,0 +1,1 @@
+vhdtdtfi -prj roulette_vhdl -o /home/m1/wissocq/Documents/M1S1/AEO/roulette_vhdl/rdm.vhi -lib work /home/m1/wissocq/Documents/M1S1/AEO/roulette_vhdl//rdm.vhd -module rdm -template /opt/Xilinx/12.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 

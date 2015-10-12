@@ -1,18 +1,21 @@
-Release 12.4 - xst M.81d (nt)
+Release 12.4 - xst M.81d (lin64)
 Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to xst/projnav.tmp
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.03 secs
  
---> Parameter xsthdpdir set to xst
+--> 
+Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.03 secs
  
---> Reading design: toplevel.prj
+--> 
+Reading design: toplevel.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -109,29 +112,29 @@ Cores Search Directories           : {"ipcore_dir/tmp/_cg"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "\Documents and Settings\JF\My Documents\Fac\AEO\TP2_2\../TP1/X7seg.vhd" into library work
+Parsing VHDL file "/home/m1/durand/Documents/AEO/TP2_2/../TP1/X7seg.vhd" into library work
 Parsing entity <X7seg>.
 Parsing architecture <Behavioral> of entity <x7seg>.
-Parsing VHDL file "\Documents and Settings\JF\My Documents\Fac\AEO\TP2_2\Enable190.vhf" into library work
+Parsing VHDL file "/home/m1/durand/Documents/AEO/TP2_2/Enable190.vhf" into library work
 Parsing entity <CB4CE_HXILINX_Enable190>.
 Parsing architecture <Behavioral> of entity <cb4ce_hxilinx_enable190>.
 Parsing entity <CB16CE_HXILINX_Enable190>.
 Parsing architecture <Behavioral> of entity <cb16ce_hxilinx_enable190>.
 Parsing entity <Enable190>.
 Parsing architecture <BEHAVIORAL> of entity <enable190>.
-Parsing VHDL file "\Documents and Settings\JF\My Documents\Fac\AEO\TP2_2\ipcore_dir/tmp/_cg/timer.vhd" into library work
+Parsing VHDL file "/home/m1/durand/Documents/AEO/TP2_2/ipcore_dir/tmp/_cg/timer.vhd" into library work
 Parsing entity <timer>.
 Parsing architecture <xilinx> of entity <timer>.
-Parsing VHDL file "\Documents and Settings\JF\My Documents\Fac\AEO\TP2_2\broadcast.vhf" into library work
+Parsing VHDL file "/home/m1/durand/Documents/AEO/TP2_2/broadcast.vhf" into library work
 Parsing entity <broadcast>.
 Parsing architecture <BEHAVIORAL> of entity <broadcast>.
-Parsing VHDL file "\Documents and Settings\JF\My Documents\Fac\AEO\TP2_2\RDM.vhf" into library work
+Parsing VHDL file "/home/m1/durand/Documents/AEO/TP2_2/RDM.vhf" into library work
 Parsing entity <RDM>.
 Parsing architecture <BEHAVIORAL> of entity <rdm>.
-Parsing VHDL file "\Documents and Settings\JF\My Documents\Fac\AEO\TP2_2\pulse.vhf" into library work
+Parsing VHDL file "/home/m1/durand/Documents/AEO/TP2_2/pulse.vhf" into library work
 Parsing entity <pulse>.
 Parsing architecture <BEHAVIORAL> of entity <pulse>.
-Parsing VHDL file "\Documents and Settings\JF\My Documents\Fac\AEO\TP2_2\afficheur.vhf" into library work
+Parsing VHDL file "/home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf" into library work
 Parsing entity <CB4CE_HXILINX_afficheur>.
 Parsing architecture <Behavioral> of entity <cb4ce_hxilinx_afficheur>.
 Parsing entity <CB16CE_HXILINX_afficheur>.
@@ -148,7 +151,7 @@ Parsing entity <Mux4x4_MUSER_afficheur>.
 Parsing architecture <BEHAVIORAL> of entity <mux4x4_muser_afficheur>.
 Parsing entity <afficheur>.
 Parsing architecture <BEHAVIORAL> of entity <afficheur>.
-Parsing VHDL file "\Documents and Settings\JF\My Documents\Fac\AEO\TP2_2\toplevel.vhf" into library work
+Parsing VHDL file "/home/m1/durand/Documents/AEO/TP2_2/toplevel.vhf" into library work
 Parsing entity <OBUF8_HXILINX_toplevel>.
 Parsing architecture <OBUF8_HXILINX_toplevel_V> of entity <obuf8_hxilinx_toplevel>.
 Parsing entity <COMP8_HXILINX_toplevel>.
@@ -177,15 +180,15 @@ Elaborating entity <Enable190> (architecture <BEHAVIORAL>) from library <work>.
 Elaborating entity <CB16CE_HXILINX_Enable190> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <CB4CE_HXILINX_Enable190> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:634 - "\Documents and Settings\JF\My Documents\Fac\AEO\TP2_2\Enable190.vhf" Line 138: Net <XLXI_1_CLR_openSignal> does not have a driver.
-WARNING:HDLCompiler:634 - "\Documents and Settings\JF\My Documents\Fac\AEO\TP2_2\Enable190.vhf" Line 139: Net <XLXI_2_CLR_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/m1/durand/Documents/AEO/TP2_2/Enable190.vhf" Line 138: Net <XLXI_1_CLR_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/m1/durand/Documents/AEO/TP2_2/Enable190.vhf" Line 139: Net <XLXI_2_CLR_openSignal> does not have a driver.
 
 Elaborating entity <afficheur> (architecture <BEHAVIORAL>) from library <work>.
 
 Elaborating entity <Mux4x4_MUSER_afficheur> (architecture <BEHAVIORAL>) from library <work>.
 
 Elaborating entity <M4_1E_HXILINX_afficheur> (architecture <M4_1E_HXILINX_afficheur_V>) from library <work>.
-INFO:HDLCompiler:679 - "\Documents and Settings\JF\My Documents\Fac\AEO\TP2_2\afficheur.vhf" Line 151. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf" Line 151. Case statement is complete. others clause is never selected
 
 Elaborating entity <X7seg> (architecture <Behavioral>) from library <work>.
 
@@ -196,66 +199,66 @@ Elaborating entity <Enable190_MUSER_afficheur> (architecture <BEHAVIORAL>) from 
 Elaborating entity <CB16CE_HXILINX_afficheur> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <CB4CE_HXILINX_afficheur> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:634 - "\Documents and Settings\JF\My Documents\Fac\AEO\TP2_2\afficheur.vhf" Line 283: Net <XLXI_1_CLR_openSignal> does not have a driver.
-WARNING:HDLCompiler:634 - "\Documents and Settings\JF\My Documents\Fac\AEO\TP2_2\afficheur.vhf" Line 284: Net <XLXI_2_CLR_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf" Line 283: Net <XLXI_1_CLR_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf" Line 284: Net <XLXI_2_CLR_openSignal> does not have a driver.
 
 Elaborating entity <shiftanodes_MUSER_afficheur> (architecture <BEHAVIORAL>) from library <work>.
-WARNING:HDLCompiler:634 - "\Documents and Settings\JF\My Documents\Fac\AEO\TP2_2\afficheur.vhf" Line 485: Net <XLXI_3_CLR_openSignal> does not have a driver.
-
-Elaborating entity <broadcast_MUSER_toplevel> (architecture <BEHAVIORAL>) from library <work>.
+WARNING:HDLCompiler:634 - "/home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf" Line 485: Net <XLXI_3_CLR_openSignal> does not have a driver.
 
 Elaborating entity <COMP8_HXILINX_toplevel> (architecture <COMP8_HXILINX_toplevel_V>) from library <work>.
 
 Elaborating entity <OBUF8_HXILINX_toplevel> (architecture <OBUF8_HXILINX_toplevel_V>) from library <work>.
 
 Elaborating entity <D3_8E_HXILINX_toplevel> (architecture <D3_8E_HXILINX_toplevel_V>) from library <work>.
-INFO:HDLCompiler:679 - "\Documents and Settings\JF\My Documents\Fac\AEO\TP2_2\toplevel.vhf" Line 100. Case statement is complete. others clause is never selected
-WARNING:HDLCompiler:634 - "\Documents and Settings\JF\My Documents\Fac\AEO\TP2_2\toplevel.vhf" Line 230: Net <XLXI_8_B_openSignal[7]> does not have a driver.
+INFO:HDLCompiler:679 - "/home/m1/durand/Documents/AEO/TP2_2/toplevel.vhf" Line 100. Case statement is complete. others clause is never selected
+
+Elaborating entity <broadcast_MUSER_toplevel> (architecture <BEHAVIORAL>) from library <work>.
+WARNING:HDLCompiler:634 - "/home/m1/durand/Documents/AEO/TP2_2/toplevel.vhf" Line 230: Net <XLXI_8_B_openSignal[7]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <toplevel>.
-    Related source file is "/documents and settings/jf/my documents/fac/aeo/tp2_2/toplevel.vhf".
+    Related source file is "/home/m1/durand/Documents/AEO/TP2_2/toplevel.vhf".
     Set property "HU_SET = XLXI_8_0" for instance <XLXI_8>.
     Set property "HU_SET = XLXI_9_1" for instance <XLXI_9>.
     Set property "HU_SET = XLXI_10_2" for instance <XLXI_10>.
-INFO:Xst:3010 - "/documents and settings/jf/my documents/fac/aeo/tp2_2/toplevel.vhf" line 313: Output port <CLK_OUT2> of the instance <XLXI_3> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/home/m1/durand/Documents/AEO/TP2_2/toplevel.vhf" line 313: Output port <CLK_OUT2> of the instance <XLXI_3> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <XLXI_8_B_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <toplevel> synthesized.
 
 Synthesizing Unit <RDM>.
-    Related source file is "/documents and settings/jf/my documents/fac/aeo/tp2_2/rdm.vhf".
+    Related source file is "/home/m1/durand/Documents/AEO/TP2_2/RDM.vhf".
     Summary:
 	no macro.
 Unit <RDM> synthesized.
 
 Synthesizing Unit <pulse>.
-    Related source file is "/documents and settings/jf/my documents/fac/aeo/tp2_2/pulse.vhf".
+    Related source file is "/home/m1/durand/Documents/AEO/TP2_2/pulse.vhf".
     Summary:
 	no macro.
 Unit <pulse> synthesized.
 
 Synthesizing Unit <timer>.
-    Related source file is "/documents and settings/jf/my documents/fac/aeo/tp2_2/ipcore_dir/tmp/_cg/timer.vhd".
+    Related source file is "/home/m1/durand/Documents/AEO/TP2_2/ipcore_dir/tmp/_cg/timer.vhd".
     Summary:
 	no macro.
 Unit <timer> synthesized.
 
 Synthesizing Unit <Enable190>.
-    Related source file is "/documents and settings/jf/my documents/fac/aeo/tp2_2/enable190.vhf".
+    Related source file is "/home/m1/durand/Documents/AEO/TP2_2/Enable190.vhf".
     Set property "HU_SET = XLXI_1_0" for instance <XLXI_1>.
     Set property "HU_SET = XLXI_2_1" for instance <XLXI_2>.
-INFO:Xst:3010 - "/documents and settings/jf/my documents/fac/aeo/tp2_2/enable190.vhf" line 190: Output port <Q> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/documents and settings/jf/my documents/fac/aeo/tp2_2/enable190.vhf" line 190: Output port <TC> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/documents and settings/jf/my documents/fac/aeo/tp2_2/enable190.vhf" line 198: Output port <CEO> of the instance <XLXI_2> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/documents and settings/jf/my documents/fac/aeo/tp2_2/enable190.vhf" line 198: Output port <Q0> of the instance <XLXI_2> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/documents and settings/jf/my documents/fac/aeo/tp2_2/enable190.vhf" line 198: Output port <Q1> of the instance <XLXI_2> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/documents and settings/jf/my documents/fac/aeo/tp2_2/enable190.vhf" line 198: Output port <Q3> of the instance <XLXI_2> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/documents and settings/jf/my documents/fac/aeo/tp2_2/enable190.vhf" line 198: Output port <TC> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/home/m1/durand/Documents/AEO/TP2_2/Enable190.vhf" line 190: Output port <Q> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/home/m1/durand/Documents/AEO/TP2_2/Enable190.vhf" line 190: Output port <TC> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/home/m1/durand/Documents/AEO/TP2_2/Enable190.vhf" line 198: Output port <CEO> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/home/m1/durand/Documents/AEO/TP2_2/Enable190.vhf" line 198: Output port <Q0> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/home/m1/durand/Documents/AEO/TP2_2/Enable190.vhf" line 198: Output port <Q1> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/home/m1/durand/Documents/AEO/TP2_2/Enable190.vhf" line 198: Output port <Q3> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/home/m1/durand/Documents/AEO/TP2_2/Enable190.vhf" line 198: Output port <TC> of the instance <XLXI_2> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <XLXI_1_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <XLXI_2_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
@@ -263,7 +266,7 @@ WARNING:Xst:653 - Signal <XLXI_2_CLR_openSignal> is used but never assigned. Thi
 Unit <Enable190> synthesized.
 
 Synthesizing Unit <CB16CE_HXILINX_Enable190>.
-    Related source file is "/documents and settings/jf/my documents/fac/aeo/tp2_2/enable190.vhf".
+    Related source file is "/home/m1/durand/Documents/AEO/TP2_2/Enable190.vhf".
     Found 16-bit register for signal <COUNT>.
     Found 16-bit adder for signal <COUNT[15]_GND_17_o_add_0_OUT> created at line 105.
     Summary:
@@ -273,7 +276,7 @@ Synthesizing Unit <CB16CE_HXILINX_Enable190>.
 Unit <CB16CE_HXILINX_Enable190> synthesized.
 
 Synthesizing Unit <CB4CE_HXILINX_Enable190>.
-    Related source file is "/documents and settings/jf/my documents/fac/aeo/tp2_2/enable190.vhf".
+    Related source file is "/home/m1/durand/Documents/AEO/TP2_2/Enable190.vhf".
     Found 4-bit register for signal <COUNT>.
     Found 4-bit adder for signal <COUNT[3]_GND_18_o_add_0_OUT> created at line 57.
     Summary:
@@ -283,17 +286,17 @@ Synthesizing Unit <CB4CE_HXILINX_Enable190>.
 Unit <CB4CE_HXILINX_Enable190> synthesized.
 
 Synthesizing Unit <afficheur>.
-    Related source file is "/documents and settings/jf/my documents/fac/aeo/tp2_2/afficheur.vhf".
+    Related source file is "/home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf".
     Set property "HU_SET = XLXI_3_6" for instance <XLXI_3>.
-INFO:Xst:3010 - "/documents and settings/jf/my documents/fac/aeo/tp2_2/afficheur.vhf" line 535: Output port <CEO> of the instance <XLXI_3> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/documents and settings/jf/my documents/fac/aeo/tp2_2/afficheur.vhf" line 535: Output port <TC> of the instance <XLXI_3> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf" line 535: Output port <CEO> of the instance <XLXI_3> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf" line 535: Output port <TC> of the instance <XLXI_3> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <XLXI_3_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <afficheur> synthesized.
 
 Synthesizing Unit <Mux4x4_MUSER_afficheur>.
-    Related source file is "/documents and settings/jf/my documents/fac/aeo/tp2_2/afficheur.vhf".
+    Related source file is "/home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf".
     Set property "HU_SET = XLXI_1_2" for instance <XLXI_1>.
     Set property "HU_SET = XLXI_2_3" for instance <XLXI_2>.
     Set property "HU_SET = XLXI_3_4" for instance <XLXI_3>.
@@ -303,21 +306,21 @@ Synthesizing Unit <Mux4x4_MUSER_afficheur>.
 Unit <Mux4x4_MUSER_afficheur> synthesized.
 
 Synthesizing Unit <M4_1E_HXILINX_afficheur>.
-    Related source file is "/documents and settings/jf/my documents/fac/aeo/tp2_2/afficheur.vhf".
+    Related source file is "/home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf".
     Found 1-bit 4-to-1 multiplexer for signal <S1_D3_Mux_0_o> created at line 146.
     Summary:
 	inferred   2 Multiplexer(s).
 Unit <M4_1E_HXILINX_afficheur> synthesized.
 
 Synthesizing Unit <X7seg>.
-    Related source file is "/documents and settings/jf/my documents/fac/aeo/tp1/x7seg.vhd".
+    Related source file is "/home/m1/durand/Documents/AEO/TP1/X7seg.vhd".
     Found 16x7-bit Read Only RAM for signal <sevenseg>
     Summary:
 	inferred   1 RAM(s).
 Unit <X7seg> synthesized.
 
 Synthesizing Unit <CB2CE_HXILINX_afficheur>.
-    Related source file is "/documents and settings/jf/my documents/fac/aeo/tp2_2/afficheur.vhf".
+    Related source file is "/home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf".
     Found 2-bit register for signal <COUNT>.
     Found 2-bit adder for signal <COUNT[1]_GND_23_o_add_0_OUT> created at line 190.
     Summary:
@@ -327,16 +330,16 @@ Synthesizing Unit <CB2CE_HXILINX_afficheur>.
 Unit <CB2CE_HXILINX_afficheur> synthesized.
 
 Synthesizing Unit <Enable190_MUSER_afficheur>.
-    Related source file is "/documents and settings/jf/my documents/fac/aeo/tp2_2/afficheur.vhf".
+    Related source file is "/home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf".
     Set property "HU_SET = XLXI_1_0" for instance <XLXI_1>.
     Set property "HU_SET = XLXI_2_1" for instance <XLXI_2>.
-INFO:Xst:3010 - "/documents and settings/jf/my documents/fac/aeo/tp2_2/afficheur.vhf" line 335: Output port <Q> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/documents and settings/jf/my documents/fac/aeo/tp2_2/afficheur.vhf" line 335: Output port <TC> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/documents and settings/jf/my documents/fac/aeo/tp2_2/afficheur.vhf" line 343: Output port <CEO> of the instance <XLXI_2> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/documents and settings/jf/my documents/fac/aeo/tp2_2/afficheur.vhf" line 343: Output port <Q0> of the instance <XLXI_2> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/documents and settings/jf/my documents/fac/aeo/tp2_2/afficheur.vhf" line 343: Output port <Q1> of the instance <XLXI_2> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/documents and settings/jf/my documents/fac/aeo/tp2_2/afficheur.vhf" line 343: Output port <Q3> of the instance <XLXI_2> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/documents and settings/jf/my documents/fac/aeo/tp2_2/afficheur.vhf" line 343: Output port <TC> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf" line 335: Output port <Q> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf" line 335: Output port <TC> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf" line 343: Output port <CEO> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf" line 343: Output port <Q0> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf" line 343: Output port <Q1> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf" line 343: Output port <Q3> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf" line 343: Output port <TC> of the instance <XLXI_2> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <XLXI_1_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <XLXI_2_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
@@ -344,7 +347,7 @@ WARNING:Xst:653 - Signal <XLXI_2_CLR_openSignal> is used but never assigned. Thi
 Unit <Enable190_MUSER_afficheur> synthesized.
 
 Synthesizing Unit <CB16CE_HXILINX_afficheur>.
-    Related source file is "/documents and settings/jf/my documents/fac/aeo/tp2_2/afficheur.vhf".
+    Related source file is "/home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf".
     Found 16-bit register for signal <COUNT>.
     Found 16-bit adder for signal <COUNT[15]_GND_25_o_add_0_OUT> created at line 105.
     Summary:
@@ -354,7 +357,7 @@ Synthesizing Unit <CB16CE_HXILINX_afficheur>.
 Unit <CB16CE_HXILINX_afficheur> synthesized.
 
 Synthesizing Unit <CB4CE_HXILINX_afficheur>.
-    Related source file is "/documents and settings/jf/my documents/fac/aeo/tp2_2/afficheur.vhf".
+    Related source file is "/home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf".
     Found 4-bit register for signal <COUNT>.
     Found 4-bit adder for signal <COUNT[3]_GND_26_o_add_0_OUT> created at line 57.
     Summary:
@@ -364,35 +367,39 @@ Synthesizing Unit <CB4CE_HXILINX_afficheur>.
 Unit <CB4CE_HXILINX_afficheur> synthesized.
 
 Synthesizing Unit <shiftanodes_MUSER_afficheur>.
-    Related source file is "/documents and settings/jf/my documents/fac/aeo/tp2_2/afficheur.vhf".
+    Related source file is "/home/m1/durand/Documents/AEO/TP2_2/afficheur.vhf".
     Summary:
 	no macro.
 Unit <shiftanodes_MUSER_afficheur> synthesized.
 
-Synthesizing Unit <broadcast_MUSER_toplevel>.
-    Related source file is "/documents and settings/jf/my documents/fac/aeo/tp2_2/toplevel.vhf".
-    Summary:
-	no macro.
-Unit <broadcast_MUSER_toplevel> synthesized.
-
 Synthesizing Unit <COMP8_HXILINX_toplevel>.
-    Related source file is "/documents and settings/jf/my documents/fac/aeo/tp2_2/toplevel.vhf".
+    Related source file is "/home/m1/durand/Documents/AEO/TP2_2/toplevel.vhf".
     Found 8-bit comparator equal for signal <EQ> created at line 55
     Summary:
 	inferred   1 Comparator(s).
 Unit <COMP8_HXILINX_toplevel> synthesized.
 
 Synthesizing Unit <OBUF8_HXILINX_toplevel>.
-    Related source file is "/documents and settings/jf/my documents/fac/aeo/tp2_2/toplevel.vhf".
+    Related source file is "/home/m1/durand/Documents/AEO/TP2_2/toplevel.vhf".
     Summary:
 	no macro.
 Unit <OBUF8_HXILINX_toplevel> synthesized.
 
 Synthesizing Unit <D3_8E_HXILINX_toplevel>.
-    Related source file is "/documents and settings/jf/my documents/fac/aeo/tp2_2/toplevel.vhf".
+    Related source file is "/home/m1/durand/Documents/AEO/TP2_2/toplevel.vhf".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <D3_8E_HXILINX_toplevel> synthesized.
+
+Synthesizing Unit <broadcast_MUSER_toplevel>.
+    Related source file is "/home/m1/durand/Documents/AEO/TP2_2/toplevel.vhf".
+    Summary:
+	no macro.
+Unit <broadcast_MUSER_toplevel> synthesized.
+RTL-Simplification CPUSTAT: 0.01 
+RTL-BasicInf CPUSTAT: 0.11 
+RTL-BasicOpt CPUSTAT: 0.00 
+RTL-Remain-Bus CPUSTAT: 0.00 
 
 =========================================================================
 HDL Synthesis Report
@@ -701,7 +708,7 @@ Offset:              10.282ns (Levels of Logic = 10)
      LUT3:I0->O            1   0.205   0.580  EQ8_SW0 (N01)
      LUT6:I5->O           16   0.205   1.004  EQ8 (EQ)
      end scope: 'XLXI_8'
-     BUF:I->O              1   0.206   0.924  XLXI_7/XLXI_13 (XLXN_18<12>)
+     BUF:I->O              1   0.206   0.924  XLXI_12/XLXI_13 (XLXN_37<12>)
      begin scope: 'XLXI_5/XLXI_1/XLXI_4'
      LUT6:I1->O            7   0.203   1.021  Mmux_O11 (O)
      end scope: 'XLXI_5/XLXI_1/XLXI_4'
@@ -727,12 +734,13 @@ clk            |    3.490|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 10.05 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.63 secs
  
 --> 
 
-Total memory usage is 153364 kilobytes
+
+Total memory usage is 376332 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   14 (   0 filtered)

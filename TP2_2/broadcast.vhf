@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 12.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : broadcast.vhf
--- /___/   /\     Timestamp : 10/11/2015 16:41:13
+-- /___/   /\     Timestamp : 10/12/2015 18:02:40
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -sympath "D:/Documents and Settings/JF/My Documents/Fac/AEO/TP2_2/ipcore_dir/tmp/_cg" -intstyle ise -family spartan6 -flat -suppress -vhdl "D:/Documents and Settings/JF/My Documents/Fac/AEO/TP2_2/broadcast.vhf" -w "D:/Documents and Settings/JF/My Documents/Fac/AEO/TP2_2/broadcast.sch"
+--Command: sch2hdl -sympath /home/m1/durand/Documents/AEO/TP2_2/ipcore_dir/tmp/_cg -intstyle ise -family spartan6 -flat -suppress -vhdl /home/m1/durand/Documents/AEO/TP2_2/broadcast.vhf -w /home/m1/durand/Documents/AEO/TP2_2/broadcast.sch
 --Design Name: broadcast
 --Device: spartan6
 --Purpose:

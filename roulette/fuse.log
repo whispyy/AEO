@@ -1,0 +1,23 @@
+Running: /opt/Xilinx/12.4/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/m1/wissocq/Documents/M1S1/AEO/roulette/shiftled_isim_beh.exe -prj /home/m1/wissocq/Documents/M1S1/AEO/roulette/shiftled_beh.prj work.shiftled 
+ISim M.81d (signature 0x9ca8bed6)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/m1/wissocq/Documents/M1S1/AEO/roulette/shiftled.vhf" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 83856 KB
+Fuse CPU Usage: 90 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package numeric_std from library ieee
+Compiling package vcomponents
+Compiling architecture fde_v of entity fde [\FDE('1')\]
+Compiling architecture behavioral of entity shiftled
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 9 VHDL Units
+Built simulation executable /home/m1/wissocq/Documents/M1S1/AEO/roulette/shiftled_isim_beh.exe
+Fuse Memory Usage: 648220 KB
+Fuse CPU Usage: 100 ms
+GCC CPU Usage: 110 ms

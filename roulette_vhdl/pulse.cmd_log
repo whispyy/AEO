@@ -1,0 +1,1 @@
+sch2vhdl -intstyle ise -family spartan6 -tionly -w /home/m1/wissocq/Documents/M1S1/AEO/roulette_vhdl/pulse.sch pulse.vhi 

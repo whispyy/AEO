@@ -1,8 +1,8 @@
 --------------------------------------------------------------------------------
-Release 12.4 Trace  (nt)
+Release 12.4 Trace  (lin64)
 Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
-D:\Xilinx\12.4\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+/opt/Xilinx/12.4/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
 3 -fastpaths -xml toplevel.twx toplevel.ncd -o toplevel.twr toplevel.pcf
 
 Design file:              toplevel.ncd
@@ -70,14 +70,14 @@ clk            |    3.548|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sun Oct 11 16:42:35 2015 
+Analysis completed Mon Oct 12 18:02:58 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 124 MB
+Peak Memory Usage: 288 MB
 
 
 

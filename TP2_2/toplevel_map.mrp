@@ -1,4 +1,4 @@
-Release 12.4 Map M.81d (nt)
+Release 12.4 Map M.81d (lin64)
 Xilinx Mapping Report File for Design 'toplevel'
 
 Design Information
@@ -9,7 +9,7 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.52.76.2 $
-Mapped Date    : Sun Oct 11 16:41:50 2015
+Mapped Date    : Mon Oct 12 18:02:45 2015
 
 Design Summary
 --------------
@@ -86,9 +86,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                1.96
 
-Peak Memory Usage:  202 MB
-Total REAL time to MAP completion:  16 secs 
-Total CPU time to MAP completion:   16 secs 
+Peak Memory Usage:  465 MB
+Total REAL time to MAP completion:  4 secs 
+Total CPU time to MAP completion:   4 secs 
 
 Table of Contents
 -----------------
@@ -111,9 +111,13 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
 
 Section 3 - Informational
 -------------------------
+INFO:Security:54 - 'xc6slx16' is a WebPack part.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
    rate limited output drivers. The delay on speed critical single ended outputs

@@ -1,0 +1,6 @@
+sch2sym -intstyle ise -family spartan6 -refsym shiftled /home/m1/wissocq/Documents/M1S1/AEO/roulette/shiftled.sch /home/m1/wissocq/Documents/M1S1/AEO/roulette/shiftled.sym 
+sch2sym -intstyle ise -family spartan6 -refsym shiftled /home/m1/wissocq/Documents/M1S1/AEO/roulette/shiftled.sch /home/m1/wissocq/Documents/M1S1/AEO/roulette/shiftled.sym 
+sch2hdl -sympath /home/m1/wissocq/Documents/M1S1/AEO/roulette/ipcore_dir/tmp/_cg -intstyle ise -family spartan6 -flat -suppress -vhdl shiftled_drc.vhf -w /home/m1/wissocq/Documents/M1S1/AEO/roulette/shiftled.sch 
+sch2sym -intstyle ise -family spartan6 -refsym shiftled /home/m1/wissocq/Documents/M1S1/AEO/roulette/shiftled.sch /home/m1/wissocq/Documents/M1S1/AEO/roulette/shiftled.sym 
+sch2hdl -sympath /home/m1/wissocq/Documents/M1S1/AEO/roulette/ipcore_dir/tmp/_cg -intstyle ise -family spartan6 -flat -suppress -vhdl shiftled_drc.vhf -w /home/m1/wissocq/Documents/M1S1/AEO/roulette/shiftled.sch 
+sch2sym -intstyle ise -family spartan6 -refsym shiftled /home/m1/wissocq/Documents/M1S1/AEO/roulette/shiftled.sch /home/m1/wissocq/Documents/M1S1/AEO/roulette/shiftled.sym 

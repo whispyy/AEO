@@ -173,7 +173,9 @@
         </branch>
         <bustap x2="1312" y1="480" y2="480" x1="1408" />
         <branch name="dout(0)">
-            <wire x2="1312" y1="480" y2="480" x1="752" />
+            <attrtext style="alignment:SOFT-BCENTER" attrname="Name" x="984" y="480" type="branch" />
+            <wire x2="984" y1="480" y2="480" x1="752" />
+            <wire x2="1312" y1="480" y2="480" x1="984" />
         </branch>
         <bustap x2="1312" y1="544" y2="544" x1="1408" />
         <bustap x2="1312" y1="608" y2="608" x1="1408" />
@@ -191,7 +193,9 @@
         <bustap x2="1312" y1="1376" y2="1376" x1="1408" />
         <bustap x2="1312" y1="1440" y2="1440" x1="1408" />
         <branch name="dout(1)">
-            <wire x2="1312" y1="544" y2="544" x1="752" />
+            <attrtext style="alignment:SOFT-BCENTER" attrname="Name" x="968" y="544" type="branch" />
+            <wire x2="968" y1="544" y2="544" x1="752" />
+            <wire x2="1312" y1="544" y2="544" x1="968" />
         </branch>
         <branch name="dout(2)">
             <wire x2="1312" y1="608" y2="608" x1="752" />
@@ -218,7 +222,9 @@
             <wire x2="1312" y1="1056" y2="1056" x1="752" />
         </branch>
         <branch name="dout(15)">
-            <wire x2="1312" y1="1440" y2="1440" x1="752" />
+            <attrtext style="alignment:SOFT-BCENTER" attrname="Name" x="1050" y="1440" type="branch" />
+            <wire x2="1050" y1="1440" y2="1440" x1="752" />
+            <wire x2="1312" y1="1440" y2="1440" x1="1050" />
         </branch>
         <branch name="dout(14)">
             <wire x2="1168" y1="1376" y2="1376" x1="752" />

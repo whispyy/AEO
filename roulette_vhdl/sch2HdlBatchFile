@@ -1,0 +1,5 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,/home/m1/durand/Documents/AEO/roulette_vhdl/afficheur.vhf,-w,/home/m1/durand/Documents/AEO/roulette_vhdl/afficheur.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,/home/m1/durand/Documents/AEO/roulette_vhdl/Mux4x4.vhf,-w,/home/m1/durand/Documents/AEO/roulette_vhdl/Mux4x4.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,/home/m1/durand/Documents/AEO/roulette_vhdl/shiftanodes.vhf,-w,/home/m1/durand/Documents/AEO/roulette_vhdl/shiftanodes.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,/home/m1/durand/Documents/AEO/roulette_vhdl/pulse.vhf,-w,/home/m1/durand/Documents/AEO/roulette_vhdl/pulse.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,/home/m1/durand/Documents/AEO/roulette_vhdl/Enable190.vhf,-w,/home/m1/durand/Documents/AEO/roulette_vhdl/Enable190.sch

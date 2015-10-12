@@ -1,0 +1,1 @@
+vhdtdtfi -prj roulette_vhdl -o /home/m1/wissocq/Documents/M1S1/AEO/roulette_vhdl/X7seg.vhi -lib work /home/m1/wissocq/Documents/M1S1/AEO/roulette_vhdl//X7seg.vhd -module X7seg -template /opt/Xilinx/12.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 

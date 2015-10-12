@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 12.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : broadcast_drc.vhf
--- /___/   /\     Timestamp : 10/11/2015 16:08:13
+-- /___/   /\     Timestamp : 10/12/2015 18:01:37
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: D:\Xilinx\12.4\ISE_DS\ISE\bin\nt\unwrapped\sch2hdl.exe -sympath "D:/Documents and Settings/JF/My Documents/Fac/AEO/TP2_2/ipcore_dir/tmp/_cg" -intstyle ise -family spartan6 -flat -suppress -vhdl broadcast_drc.vhf -w "D:/Documents and Settings/JF/My Documents/Fac/AEO/TP2_2/broadcast.sch"
+--Command: /opt/Xilinx/12.4/ISE_DS/ISE/bin/lin64/unwrapped/sch2hdl -sympath /home/m1/durand/Documents/AEO/TP2_2/ipcore_dir/tmp/_cg -intstyle ise -family spartan6 -flat -suppress -vhdl broadcast_drc.vhf -w /home/m1/durand/Documents/AEO/TP2_2/broadcast.sch
 --Design Name: broadcast
 --Device: spartan6
 --Purpose:

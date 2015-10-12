@@ -1,0 +1,2 @@
+sch2hdl -sympath /home/m1/wissocq/Documents/M1S1/AEO/roulette/ipcore_dir/tmp/_cg -intstyle ise -family spartan6 -flat -suppress -vhdl mux2x8_drc.vhf -w /home/m1/wissocq/Documents/M1S1/AEO/roulette/mux2x8.sch 
+sch2sym -intstyle ise -family spartan6 -refsym mux2x8 /home/m1/wissocq/Documents/M1S1/AEO/roulette/mux2x8.sch /home/m1/wissocq/Documents/M1S1/AEO/roulette/mux2x8.sym 

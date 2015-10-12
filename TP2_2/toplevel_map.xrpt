@@ -1,51 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<document OS="nt" product="ISE" version="12.4">
+<document OS="lin64" product="ISE" version="12.4">
 
   <!--The data in this file is primarily intended for consumption by Xilinx tools.
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Sun Oct 11 16:42:06 2015">
+  <application stringID="Map" timeStamp="Mon Oct 12 18:02:49 2015">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
-          <item stringID="variable" value="Path"/>
-          <item stringID="value" value="D:\Xilinx\12.4\ISE_DS\ISE\\lib\nt;D:\Xilinx\12.4\ISE_DS\ISE\\bin\nt;D:\Xilinx\12.4\ISE_DS\PlanAhead\bin;D:\Xilinx\12.4\ISE_DS\ISE\bin\nt;D:\Xilinx\12.4\ISE_DS\ISE\lib\nt;D:\Xilinx\12.4\ISE_DS\EDK\bin\nt;D:\Xilinx\12.4\ISE_DS\EDK\lib\nt;D:\Xilinx\12.4\ISE_DS\common\bin\nt;D:\Xilinx\12.4\ISE_DS\common\lib\nt;D:\Program Files\NVIDIA Corporation\PhysX\Common;D:\WINDOWS\system32;D:\WINDOWS;D:\WINDOWS\System32\Wbem;D:\Program Files\Git\cmd"/>
+          <item stringID="variable" value="PATH"/>
+          <item stringID="value" value="/opt/Xilinx/12.4/ISE_DS/ISE//bin/lin64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/oracle/instantclient_11_2:/opt/oracle/sqldeveloper/sqldeveloper/bin"/>
         </row>
         <row stringID="row" value="1">
-          <item stringID="variable" value="PATHEXT"/>
-          <item stringID="value" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH"/>
+          <item stringID="variable" value="XILINX"/>
+          <item stringID="value" value="/opt/Xilinx/12.4/ISE_DS/ISE/"/>
         </row>
         <row stringID="row" value="2">
-          <item stringID="variable" value="XILINX"/>
-          <item stringID="value" value="D:\Xilinx\12.4\ISE_DS\ISE\"/>
-        </row>
-        <row stringID="row" value="3">
-          <item stringID="variable" value="XILINX_DSP"/>
-          <item stringID="value" value="D:\Xilinx\12.4\ISE_DS\ISE"/>
-        </row>
-        <row stringID="row" value="4">
-          <item stringID="variable" value="XILINX_EDK"/>
-          <item stringID="value" value="D:\Xilinx\12.4\ISE_DS\EDK"/>
-        </row>
-        <row stringID="row" value="5">
-          <item stringID="variable" value="XILINX_PLANAHEAD"/>
-          <item stringID="value" value="D:\Xilinx\12.4\ISE_DS\PlanAhead"/>
+          <item stringID="variable" value="LD_LIBRARY_PATH"/>
+          <item stringID="value" value="/opt/Xilinx/12.4/ISE_DS/ISE//lib/lin64"/>
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
-        <item stringID="User_EnvOsname" value="Microsoft Windows XP Professional"/>
-        <item stringID="User_EnvOsrelease" value="Service Pack 3  (build 2600)"/>
+        <item stringID="User_EnvOsname" value="Debian"/>
+        <item stringID="User_EnvOsrelease" value="Debian GNU/Linux 8.2 (jessie)"/>
       </item>
-      <item stringID="User_EnvHost" value="jf-31bdb1ddcdad"/>
+      <item stringID="User_EnvHost" value="a10p23"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="              Intel(R) Pentium(R) 4 CPU 2.93GHz"/>
-          <item stringID="speed" value="2933 MHz"/>
+          <item stringID="arch" value="Intel(R) Core(TM) i5-4570 CPU @ 3.20GHz"/>
+          <item stringID="speed" value="3579.625 MHz"/>
         </row>
       </table>
     </section>
@@ -116,9 +104,9 @@
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
         <item dataType="int" stringID="MAP_NUM_WARNINGS" value="0"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="206868"/>
-        <item stringID="MAP_TOTAL_REAL_TIME" value="16 secs "/>
-        <item stringID="MAP_TOTAL_CPU_TIME" value="16 secs "/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="475648"/>
+        <item stringID="MAP_TOTAL_REAL_TIME" value="4 secs "/>
+        <item stringID="MAP_TOTAL_CPU_TIME" value="4 secs "/>
       </section>
       <section stringID="MAP_SLICE_REPORTING">
         <item AVAILABLE="18224" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="58">

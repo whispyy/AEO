@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 12.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : toplevel.vhf
--- /___/   /\     Timestamp : 10/11/2015 16:41:13
+-- /___/   /\     Timestamp : 10/12/2015 18:02:40
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -sympath "D:/Documents and Settings/JF/My Documents/Fac/AEO/TP2_2/ipcore_dir/tmp/_cg" -intstyle ise -family spartan6 -flat -suppress -vhdl "D:/Documents and Settings/JF/My Documents/Fac/AEO/TP2_2/toplevel.vhf" -w "D:/Documents and Settings/JF/My Documents/Fac/AEO/TP2_2/toplevel.sch"
+--Command: sch2hdl -sympath /home/m1/durand/Documents/AEO/TP2_2/ipcore_dir/tmp/_cg -intstyle ise -family spartan6 -flat -suppress -vhdl /home/m1/durand/Documents/AEO/TP2_2/toplevel.vhf -w /home/m1/durand/Documents/AEO/TP2_2/toplevel.sch
 --Design Name: toplevel
 --Device: spartan6
 --Purpose:
@@ -224,9 +224,9 @@ architecture BEHAVIORAL of toplevel is
    signal position            : std_logic_vector (7 downto 0);
    signal random              : std_logic_vector (3 downto 0);
    signal XLXN_9              : std_logic;
-   signal XLXN_18             : std_logic_vector (15 downto 0);
    signal XLXN_19             : std_logic;
    signal XLXN_35             : std_logic;
+   signal XLXN_37             : std_logic_vector (15 downto 0);
    signal XLXI_8_B_openSignal : std_logic_vector (7 downto 0);
    component RDM
       port ( clk : in    std_logic; 
@@ -257,11 +257,6 @@ architecture BEHAVIORAL of toplevel is
              clk      : in    std_logic; 
              sevenseg : out   std_logic_vector (6 downto 0); 
              anodes   : out   std_logic_vector (3 downto 0));
-   end component;
-   
-   component broadcast_MUSER_toplevel
-      port ( din  : in    std_logic; 
-             dout : out   std_logic_vector (15 downto 0));
    end component;
    
    component COMP8_HXILINX_toplevel
@@ -295,6 +290,11 @@ architecture BEHAVIORAL of toplevel is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
+   component broadcast_MUSER_toplevel
+      port ( din  : in    std_logic; 
+             dout : out   std_logic_vector (15 downto 0));
+   end component;
+   
    attribute HU_SET of XLXI_8 : label is "XLXI_8_0";
    attribute HU_SET of XLXI_9 : label is "XLXI_9_1";
    attribute HU_SET of XLXI_10 : label is "XLXI_10_2";
@@ -321,13 +321,9 @@ begin
    
    XLXI_5 : afficheur
       port map (clk=>clk100,
-                din(15 downto 0)=>XLXN_18(15 downto 0),
+                din(15 downto 0)=>XLXN_37(15 downto 0),
                 anodes(3 downto 0)=>anodes(3 downto 0),
                 sevenseg(6 downto 0)=>sevenseg(6 downto 0));
-   
-   XLXI_7 : broadcast_MUSER_toplevel
-      port map (din=>XLXN_19,
-                dout(15 downto 0)=>XLXN_18(15 downto 0));
    
    XLXI_8 : COMP8_HXILINX_toplevel
       port map (A(7 downto 0)=>position(7 downto 0),
@@ -354,6 +350,10 @@ begin
    
    XLXI_11 : VCC
       port map (P=>XLXN_35);
+   
+   XLXI_12 : broadcast_MUSER_toplevel
+      port map (din=>XLXN_19,
+                dout(15 downto 0)=>XLXN_37(15 downto 0));
    
 end BEHAVIORAL;
 

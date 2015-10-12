@@ -14,8 +14,6 @@
         <signal name="XLXN_9" />
         <signal name="sevenseg(6:0)" />
         <signal name="anodes(3:0)" />
-        <signal name="XLXN_17(15:0)" />
-        <signal name="XLXN_18(15:0)" />
         <signal name="XLXN_19" />
         <signal name="position(7:0)" />
         <signal name="led(7:0)" />
@@ -32,6 +30,7 @@
         <signal name="random(2)" />
         <signal name="random(3)" />
         <signal name="XLXN_35" />
+        <signal name="XLXN_37(15:0)" />
         <port polarity="Input" name="clk" />
         <port polarity="Input" name="btn0" />
         <port polarity="Output" name="sevenseg(6:0)" />
@@ -54,7 +53,7 @@
             <line x2="384" y1="-160" y2="-160" x1="320" />
         </blockdef>
         <blockdef name="timer">
-            <timestamp>2015-10-11T12:43:47</timestamp>
+            <timestamp>2015-10-12T15:45:16</timestamp>
             <rect width="544" x="32" y="32" height="1056" />
             <line x2="32" y1="80" y2="80" x1="0" />
             <line x2="576" y1="80" y2="80" x1="608" />
@@ -76,13 +75,6 @@
             <line x2="384" y1="-96" y2="-96" x1="320" />
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
-        </blockdef>
-        <blockdef name="broadcast">
-            <timestamp>2015-10-11T14:14:43</timestamp>
-            <rect width="256" x="64" y="-128" height="72" />
-            <line x2="0" y1="-96" y2="-96" x1="64" />
-            <line x2="384" y1="-96" y2="-96" x1="320" />
-            <rect width="64" x="320" y="-112" height="28" />
         </blockdef>
         <blockdef name="comp8">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -125,6 +117,13 @@
             <line x2="64" y1="0" y2="-32" x1="64" />
             <line x2="32" y1="-64" y2="-64" x1="96" />
         </blockdef>
+        <blockdef name="broadcast">
+            <timestamp>2015-10-12T16:1:36</timestamp>
+            <rect width="256" x="64" y="-64" height="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="320" y="-44" height="24" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
         <block symbolname="RDM" name="XLXI_1">
             <blockpin signalname="clk100" name="clk" />
             <blockpin signalname="XLXN_9" name="CE" />
@@ -146,14 +145,10 @@
             <blockpin signalname="E190" name="enable190" />
         </block>
         <block symbolname="afficheur" name="XLXI_5">
-            <blockpin signalname="XLXN_18(15:0)" name="din(15:0)" />
+            <blockpin signalname="XLXN_37(15:0)" name="din(15:0)" />
             <blockpin signalname="clk100" name="clk" />
             <blockpin signalname="sevenseg(6:0)" name="sevenseg(6:0)" />
             <blockpin signalname="anodes(3:0)" name="anodes(3:0)" />
-        </block>
-        <block symbolname="broadcast" name="XLXI_7">
-            <blockpin signalname="XLXN_19" name="din" />
-            <blockpin signalname="XLXN_18(15:0)" name="dout(15:0)" />
         </block>
         <block symbolname="comp8" name="XLXI_8">
             <blockpin signalname="position(7:0)" name="A(7:0)" />
@@ -180,6 +175,10 @@
         </block>
         <block symbolname="vcc" name="XLXI_11">
             <blockpin signalname="XLXN_35" name="P" />
+        </block>
+        <block symbolname="broadcast" name="XLXI_12">
+            <blockpin signalname="XLXN_19" name="din" />
+            <blockpin signalname="XLXN_37(15:0)" name="dout(15:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -231,11 +230,6 @@
         <iomarker fontsize="28" x="3232" y="2368" name="anodes(3:0)" orien="R0" />
         <instance x="2800" y="2400" name="XLXI_5" orien="R0">
         </instance>
-        <instance x="2336" y="2400" name="XLXI_7" orien="R0">
-        </instance>
-        <branch name="XLXN_18(15:0)">
-            <wire x2="2800" y1="2304" y2="2304" x1="2720" />
-        </branch>
         <iomarker fontsize="28" x="96" y="2240" name="btn0" orien="R180" />
         <instance x="176" y="2400" name="XLXI_4" orien="R0">
         </instance>
@@ -246,6 +240,7 @@
         <instance x="1920" y="2528" name="XLXI_8" orien="R0" />
         <branch name="XLXN_19">
             <wire x2="2336" y1="2304" y2="2304" x1="2304" />
+            <wire x2="2384" y1="2304" y2="2304" x1="2336" />
         </branch>
         <branch name="position(7:0)">
             <attrtext style="alignment:SOFT-BCENTER" attrname="Name" x="1856" y="1984" type="branch" />
@@ -349,6 +344,11 @@
         <branch name="XLXN_35">
             <wire x2="1712" y1="1328" y2="1392" x1="1712" />
             <wire x2="1856" y1="1392" y2="1392" x1="1712" />
+        </branch>
+        <instance x="2384" y="2336" name="XLXI_12" orien="R0">
+        </instance>
+        <branch name="XLXN_37(15:0)">
+            <wire x2="2800" y1="2304" y2="2304" x1="2768" />
         </branch>
     </sheet>
 </drawing>
