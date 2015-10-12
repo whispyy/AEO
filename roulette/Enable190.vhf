@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 12.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Enable190.vhf
--- /___/   /\     Timestamp : 10/12/2015 18:28:39
+-- /___/   /\     Timestamp : 10/12/2015 18:39:39
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -184,8 +184,8 @@ architecture BEHAVIORAL of Enable190 is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_33";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_34";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_0";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_1";
 begin
    XLXI_1 : CB16CE_HXILINX_Enable190
       port map (C=>clk,

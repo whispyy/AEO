@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Reading design: toplevel.prj
@@ -428,9 +428,9 @@ Synthesizing Unit <shiftled_MUSER_toplevel>.
     Summary:
 	no macro.
 Unit <shiftled_MUSER_toplevel> synthesized.
-RTL-Simplification CPUSTAT: 0.01 
-RTL-BasicInf CPUSTAT: 0.10 
-RTL-BasicOpt CPUSTAT: 0.01 
+RTL-Simplification CPUSTAT: 0.02 
+RTL-BasicInf CPUSTAT: 0.08 
+RTL-BasicOpt CPUSTAT: 0.00 
 RTL-Remain-Bus CPUSTAT: 0.00 
 
 =========================================================================
@@ -792,12 +792,12 @@ clk            |    3.750|         |         |         |
 
 
 Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 2.72 secs
+Total CPU time to Xst completion: 2.67 secs
  
 --> 
 
 
-Total memory usage is 376784 kilobytes
+Total memory usage is 376788 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   11 (   0 filtered)

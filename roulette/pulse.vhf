@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 12.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : pulse.vhf
--- /___/   /\     Timestamp : 10/12/2015 18:28:39
+-- /___/   /\     Timestamp : 10/12/2015 18:39:39
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
