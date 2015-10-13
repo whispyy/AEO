@@ -1,0 +1,1 @@
+vhdtdtfi -prj roulette_vhdl1 -o /home/m1/durand/Documents/AEO/roulette_vhdl1/timer.vhi -lib work /home/m1/durand/Documents/AEO/roulette/ipcore_dir/tmp/_cg//timer.vhd -module timer -template /opt/Xilinx/12.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 

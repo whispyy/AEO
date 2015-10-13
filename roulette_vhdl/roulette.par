@@ -1,7 +1,7 @@
 Release 12.4 par M.81d (lin64)
 Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
-a10p23::  Mon Oct 12 18:31:38 2015
+a16p6::  Tue Oct 13 18:29:56 2015
 
 par -w -intstyle ise -ol high -mt off roulette_map.ncd roulette.ncd
 roulette.pcf 
@@ -113,7 +113,7 @@ Starting Router
 
 Phase  1  : 352 unrouted;      REAL time: 2 secs 
 
-Phase  2  : 271 unrouted;      REAL time: 3 secs 
+Phase  2  : 271 unrouted;      REAL time: 2 secs 
 
 Phase  3  : 62 unrouted;      REAL time: 3 secs 
 
@@ -175,8 +175,8 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 1 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 4 secs 
-Total CPU time to PAR completion: 4 secs 
+Total REAL time to PAR completion: 3 secs 
+Total CPU time to PAR completion: 3 secs 
 
 Peak Memory Usage:  451 MB
 

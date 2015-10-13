@@ -37,41 +37,6 @@
         <signal name="state" />
         <signal name="XLXN_119(7:0)" />
         <signal name="XLXN_121" />
-        <signal name="XLXN_123(7:0)" />
-        <signal name="XLXN_124(7:0)" />
-        <signal name="XLXN_125(7:0)" />
-        <signal name="XLXN_126(7:0)" />
-        <signal name="XLXN_128" />
-        <signal name="XLXN_130" />
-        <signal name="XLXN_131" />
-        <signal name="XLXN_132" />
-        <signal name="XLXN_133" />
-        <signal name="XLXN_134" />
-        <signal name="XLXN_135" />
-        <signal name="XLXN_136" />
-        <signal name="XLXN_137" />
-        <signal name="XLXN_138" />
-        <signal name="XLXN_139" />
-        <signal name="XLXN_140" />
-        <signal name="XLXN_141" />
-        <signal name="XLXN_142" />
-        <signal name="XLXN_143" />
-        <signal name="XLXN_144" />
-        <signal name="XLXN_145" />
-        <signal name="XLXN_146" />
-        <signal name="XLXN_147" />
-        <signal name="XLXN_148" />
-        <signal name="XLXN_149" />
-        <signal name="XLXN_150" />
-        <signal name="XLXN_151" />
-        <signal name="XLXN_152" />
-        <signal name="XLXN_153" />
-        <signal name="XLXN_154" />
-        <signal name="XLXN_155" />
-        <signal name="XLXN_156" />
-        <signal name="XLXN_157" />
-        <signal name="XLXN_158" />
-        <signal name="XLXN_159" />
         <port polarity="Input" name="clk" />
         <port polarity="Input" name="btn0" />
         <port polarity="Output" name="led(7:0)" />
@@ -416,9 +381,8 @@
             <wire x2="2752" y1="2304" y2="2304" x1="2656" />
         </branch>
         <branch name="switches(7:0)">
-            <attrtext style="alignment:SOFT-BCENTER" attrname="Name" x="384" y="2384" type="branch" />
-            <wire x2="384" y1="2384" y2="2384" x1="304" />
-            <wire x2="384" y1="2384" y2="2400" x1="384" />
+            <attrtext style="alignment:SOFT-BCENTER" attrname="Name" x="384" y="2400" type="branch" />
+            <wire x2="384" y1="2400" y2="2400" x1="304" />
             <wire x2="1808" y1="2400" y2="2400" x1="384" />
         </branch>
         <branch name="clk100">
@@ -431,7 +395,6 @@
         <branch name="anodes(3:0)">
             <wire x2="3280" y1="2368" y2="2368" x1="3136" />
         </branch>
-        <iomarker fontsize="28" x="304" y="2384" name="switches(7:0)" orien="R180" />
         <branch name="XLXN_114">
             <wire x2="1072" y1="1632" y2="1632" x1="736" />
         </branch>
@@ -515,5 +478,6 @@
         <instance x="1856" y="1184" name="XLXI_16" orien="R270" />
         <instance x="1840" y="320" name="XLXI_46" orien="R0">
         </instance>
+        <iomarker fontsize="28" x="304" y="2400" name="switches(7:0)" orien="R180" />
     </sheet>
 </drawing>

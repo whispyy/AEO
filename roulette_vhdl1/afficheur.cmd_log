@@ -1,0 +1,2 @@
+sch2vhdl -intstyle ise -family spartan6 -tionly -w /home/m1/durand/Documents/AEO/roulette_vhdl1/afficheur.sch afficheur.vhi 
+sch2vhdl -intstyle ise -family spartan6 -tionly -w /home/m1/durand/Documents/AEO/roulette_vhdl1/afficheur.sch afficheur.vhi 

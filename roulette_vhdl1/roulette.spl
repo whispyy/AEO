@@ -1,0 +1,8 @@
+[Inputs]
+clk
+=switches[7:0]=
+=btn[2:0]=
+[Outputs]
+=led[7:0]=
+=sevenseg[3:0]=
+[BiDir]

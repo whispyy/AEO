@@ -1,0 +1,4 @@
+vhdtdtfi -lib work roulette.vhd -prj roulette_vhdl1 -o roulette.spl -module roulette -template /opt/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 roulette.spl /home/m1/durand/Documents/AEO/roulette_vhdl1/roulette.sym 
+xst -intstyle ise -ifn "/home/m1/durand/Documents/AEO/roulette_vhdl1/roulette.xst" -ofn "/home/m1/durand/Documents/AEO/roulette_vhdl1/roulette.syr" 
+xst -intstyle ise -ifn "/home/m1/durand/Documents/AEO/roulette_vhdl1/roulette.xst" -ofn "/home/m1/durand/Documents/AEO/roulette_vhdl1/roulette.syr" 

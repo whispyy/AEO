@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym pulse /home/m1/durand/Documents/AEO/roulette_vhdl1/pulse.sch /home/m1/durand/Documents/AEO/roulette_vhdl1/pulse.sym 
