@@ -14,3 +14,6 @@ roulette ok reprise de TP2_2
 
 roulette_vhdl
 pas ok
+
+roulette_vhdl1
+recommencé mais pas ok

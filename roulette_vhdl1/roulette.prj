@@ -1,1 +1,4 @@
+vhdl work "X7seg.vhd"
+vhdl work "rdm.vhd"
+vhdl work "../roulette/ipcore_dir/tmp/_cg/timer.vhd"
 vhdl work "roulette.vhd"

@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: roulette.prj
@@ -109,16 +109,25 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+Parsing VHDL file "/home/m1/durand/Documents/AEO/roulette_vhdl1/X7seg.vhd" into library work
+Parsing entity <X7seg>.
+Parsing architecture <Behavioral> of entity <x7seg>.
+Parsing VHDL file "/home/m1/durand/Documents/AEO/roulette_vhdl1/rdm.vhd" into library work
+Parsing entity <rdm>.
+Parsing architecture <Behavioral> of entity <rdm>.
+Parsing VHDL file "/home/m1/durand/Documents/AEO/roulette_vhdl1/../roulette/ipcore_dir/tmp/_cg/timer.vhd" into library work
+Parsing entity <timer>.
+Parsing architecture <xilinx> of entity <timer>.
 Parsing VHDL file "/home/m1/durand/Documents/AEO/roulette_vhdl1/roulette.vhd" into library work
 Parsing entity <roulette>.
 Parsing architecture <Behavioral> of entity <roulette>.
-ERROR:HDLCompiler:806 - "/home/m1/durand/Documents/AEO/roulette_vhdl1/roulette.vhd" Line 94: Syntax error near "mon_afficheur".
-ERROR:HDLCompiler:806 - "/home/m1/durand/Documents/AEO/roulette_vhdl1/roulette.vhd" Line 129: Syntax error near "end".
+ERROR:HDLCompiler:806 - "/home/m1/durand/Documents/AEO/roulette_vhdl1/roulette.vhd" Line 88: Syntax error near "Inst_rdm".
+ERROR:HDLCompiler:806 - "/home/m1/durand/Documents/AEO/roulette_vhdl1/roulette.vhd" Line 127: Syntax error near "end".
 VHDL file /home/m1/durand/Documents/AEO/roulette_vhdl1/roulette.vhd ignored due to errors
 --> 
 
 
-Total memory usage is 296188 kilobytes
+Total memory usage is 311476 kilobytes
 
 Number of errors   :    2 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

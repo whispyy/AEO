@@ -1,0 +1,1017 @@
+--------------------------------------------------------------------------------
+Release 12.4 Trace  (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/12.4/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml Nexys3v6.twx Nexys3v6.ncd -o Nexys3v6.twr Nexys3v6.pcf -ucf
+Nexys3.ucf
+
+Design file:              Nexys3v6.ncd
+Physical constraint file: Nexys3v6.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.15 2010-12-02)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_clk_pin = PERIOD TIMEGRP "clk_pin" 10 ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   5.340ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk_pin = PERIOD TIMEGRP "clk_pin" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 4.660ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 2.670ns (Tdcmpw_CLKIN_100_150)
+  Physical resource: clk_gen/dcm_sp_inst/CLKIN
+  Logical resource: clk_gen/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: clk_gen/dcm_sp_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 4.660ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 2.670ns (Tdcmpw_CLKIN_100_150)
+  Physical resource: clk_gen/dcm_sp_inst/CLKIN
+  Logical resource: clk_gen/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: clk_gen/dcm_sp_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 6.430ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 3.570ns (280.112MHz) (Tdcmper_CLKIN)
+  Physical resource: clk_gen/dcm_sp_inst/CLKIN
+  Logical resource: clk_gen/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: clk_gen/dcm_sp_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clk_gen_clk0 = PERIOD TIMEGRP "clk_gen_clk0" TS_clk_pin 
+HIGH 50%;
+
+ 475 paths analyzed, 167 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.785ns.
+--------------------------------------------------------------------------------
+
+Paths for end point D7seg_display/XLXI_34/XLXI_1 (SLICE_X36Y14.CE), 2 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     5.215ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               My_E190/XLXI_21 (FF)
+  Destination:          D7seg_display/XLXI_34/XLXI_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      4.675ns (Levels of Logic = 1)
+  Clock Path Skew:      0.025ns (0.471 - 0.446)
+  Source Clock:         clk100 rising at 0.000ns
+  Destination Clock:    clk100 rising at 10.000ns
+  Clock Uncertainty:    0.135ns
+
+  Clock Uncertainty:          0.135ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.200ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: My_E190/XLXI_21 to D7seg_display/XLXI_34/XLXI_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y41.AQ      Tcko                  0.408   My_E190/XLXN_76
+                                                       My_E190/XLXI_21
+    SLICE_X13Y41.A5      net (fanout=2)        0.793   My_E190/XLXN_74
+    SLICE_X13Y41.A       Tilo                  0.259   E190
+                                                       My_E190/XLXI_28
+    SLICE_X36Y14.CE      net (fanout=7)        2.880   E190
+    SLICE_X36Y14.CLK     Tceck                 0.335   an_2_OBUF
+                                                       D7seg_display/XLXI_34/XLXI_1
+    -------------------------------------------------  ---------------------------
+    Total                                      4.675ns (1.002ns logic, 3.673ns route)
+                                                       (21.4% logic, 78.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     5.243ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               My_E190/XLXI_22 (FF)
+  Destination:          D7seg_display/XLXI_34/XLXI_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      4.647ns (Levels of Logic = 1)
+  Clock Path Skew:      0.025ns (0.471 - 0.446)
+  Source Clock:         clk100 rising at 0.000ns
+  Destination Clock:    clk100 rising at 10.000ns
+  Clock Uncertainty:    0.135ns
+
+  Clock Uncertainty:          0.135ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.200ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: My_E190/XLXI_22 to D7seg_display/XLXI_34/XLXI_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y41.BQ      Tcko                  0.408   My_E190/XLXN_76
+                                                       My_E190/XLXI_22
+    SLICE_X13Y41.A2      net (fanout=1)        0.765   My_E190/XLXN_76
+    SLICE_X13Y41.A       Tilo                  0.259   E190
+                                                       My_E190/XLXI_28
+    SLICE_X36Y14.CE      net (fanout=7)        2.880   E190
+    SLICE_X36Y14.CLK     Tceck                 0.335   an_2_OBUF
+                                                       D7seg_display/XLXI_34/XLXI_1
+    -------------------------------------------------  ---------------------------
+    Total                                      4.647ns (1.002ns logic, 3.645ns route)
+                                                       (21.6% logic, 78.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point D7seg_display/XLXI_34/XLXI_2 (SLICE_X36Y14.CE), 2 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     5.232ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               My_E190/XLXI_21 (FF)
+  Destination:          D7seg_display/XLXI_34/XLXI_2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      4.658ns (Levels of Logic = 1)
+  Clock Path Skew:      0.025ns (0.471 - 0.446)
+  Source Clock:         clk100 rising at 0.000ns
+  Destination Clock:    clk100 rising at 10.000ns
+  Clock Uncertainty:    0.135ns
+
+  Clock Uncertainty:          0.135ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.200ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: My_E190/XLXI_21 to D7seg_display/XLXI_34/XLXI_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y41.AQ      Tcko                  0.408   My_E190/XLXN_76
+                                                       My_E190/XLXI_21
+    SLICE_X13Y41.A5      net (fanout=2)        0.793   My_E190/XLXN_74
+    SLICE_X13Y41.A       Tilo                  0.259   E190
+                                                       My_E190/XLXI_28
+    SLICE_X36Y14.CE      net (fanout=7)        2.880   E190
+    SLICE_X36Y14.CLK     Tceck                 0.318   an_2_OBUF
+                                                       D7seg_display/XLXI_34/XLXI_2
+    -------------------------------------------------  ---------------------------
+    Total                                      4.658ns (0.985ns logic, 3.673ns route)
+                                                       (21.1% logic, 78.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     5.260ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               My_E190/XLXI_22 (FF)
+  Destination:          D7seg_display/XLXI_34/XLXI_2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      4.630ns (Levels of Logic = 1)
+  Clock Path Skew:      0.025ns (0.471 - 0.446)
+  Source Clock:         clk100 rising at 0.000ns
+  Destination Clock:    clk100 rising at 10.000ns
+  Clock Uncertainty:    0.135ns
+
+  Clock Uncertainty:          0.135ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.200ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: My_E190/XLXI_22 to D7seg_display/XLXI_34/XLXI_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y41.BQ      Tcko                  0.408   My_E190/XLXN_76
+                                                       My_E190/XLXI_22
+    SLICE_X13Y41.A2      net (fanout=1)        0.765   My_E190/XLXN_76
+    SLICE_X13Y41.A       Tilo                  0.259   E190
+                                                       My_E190/XLXI_28
+    SLICE_X36Y14.CE      net (fanout=7)        2.880   E190
+    SLICE_X36Y14.CLK     Tceck                 0.318   an_2_OBUF
+                                                       D7seg_display/XLXI_34/XLXI_2
+    -------------------------------------------------  ---------------------------
+    Total                                      4.630ns (0.985ns logic, 3.645ns route)
+                                                       (21.3% logic, 78.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point D7seg_display/XLXI_34/XLXI_4 (SLICE_X36Y14.CE), 2 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     5.235ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               My_E190/XLXI_21 (FF)
+  Destination:          D7seg_display/XLXI_34/XLXI_4 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      4.655ns (Levels of Logic = 1)
+  Clock Path Skew:      0.025ns (0.471 - 0.446)
+  Source Clock:         clk100 rising at 0.000ns
+  Destination Clock:    clk100 rising at 10.000ns
+  Clock Uncertainty:    0.135ns
+
+  Clock Uncertainty:          0.135ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.200ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: My_E190/XLXI_21 to D7seg_display/XLXI_34/XLXI_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y41.AQ      Tcko                  0.408   My_E190/XLXN_76
+                                                       My_E190/XLXI_21
+    SLICE_X13Y41.A5      net (fanout=2)        0.793   My_E190/XLXN_74
+    SLICE_X13Y41.A       Tilo                  0.259   E190
+                                                       My_E190/XLXI_28
+    SLICE_X36Y14.CE      net (fanout=7)        2.880   E190
+    SLICE_X36Y14.CLK     Tceck                 0.315   an_2_OBUF
+                                                       D7seg_display/XLXI_34/XLXI_4
+    -------------------------------------------------  ---------------------------
+    Total                                      4.655ns (0.982ns logic, 3.673ns route)
+                                                       (21.1% logic, 78.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     5.263ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               My_E190/XLXI_22 (FF)
+  Destination:          D7seg_display/XLXI_34/XLXI_4 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      4.627ns (Levels of Logic = 1)
+  Clock Path Skew:      0.025ns (0.471 - 0.446)
+  Source Clock:         clk100 rising at 0.000ns
+  Destination Clock:    clk100 rising at 10.000ns
+  Clock Uncertainty:    0.135ns
+
+  Clock Uncertainty:          0.135ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.200ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: My_E190/XLXI_22 to D7seg_display/XLXI_34/XLXI_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y41.BQ      Tcko                  0.408   My_E190/XLXN_76
+                                                       My_E190/XLXI_22
+    SLICE_X13Y41.A2      net (fanout=1)        0.765   My_E190/XLXN_76
+    SLICE_X13Y41.A       Tilo                  0.259   E190
+                                                       My_E190/XLXI_28
+    SLICE_X36Y14.CE      net (fanout=7)        2.880   E190
+    SLICE_X36Y14.CLK     Tceck                 0.315   an_2_OBUF
+                                                       D7seg_display/XLXI_34/XLXI_4
+    -------------------------------------------------  ---------------------------
+    Total                                      4.627ns (0.982ns logic, 3.645ns route)
+                                                       (21.2% logic, 78.8% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clk_gen_clk0 = PERIOD TIMEGRP "clk_gen_clk0" TS_clk_pin HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_debounce4/delay3_1 (SLICE_X11Y38.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.383ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               reset_Homade (FF)
+  Destination:          Inst_debounce4/delay3_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.944ns (Levels of Logic = 0)
+  Clock Path Skew:      0.236ns (0.959 - 0.723)
+  Source Clock:         clk50 rising at 0.000ns
+  Destination Clock:    clk100 rising at 10.000ns
+  Clock Uncertainty:    0.325ns
+
+  Clock Uncertainty:          0.325ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.140ns
+
+  Minimum Data Path at Fast Process Corner: reset_Homade to Inst_debounce4/delay3_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X20Y39.DQ      Tcko                  0.200   reset_Homade
+                                                       reset_Homade
+    SLICE_X11Y38.SR      net (fanout=113)      0.606   reset_Homade
+    SLICE_X11Y38.CLK     Tremck      (-Th)    -0.138   Inst_debounce4/delay2<3>
+                                                       Inst_debounce4/delay3_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.944ns (0.338ns logic, 0.606ns route)
+                                                       (35.8% logic, 64.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_debounce4/delay3_0 (SLICE_X11Y38.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.384ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               reset_Homade (FF)
+  Destination:          Inst_debounce4/delay3_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.945ns (Levels of Logic = 0)
+  Clock Path Skew:      0.236ns (0.959 - 0.723)
+  Source Clock:         clk50 rising at 0.000ns
+  Destination Clock:    clk100 rising at 10.000ns
+  Clock Uncertainty:    0.325ns
+
+  Clock Uncertainty:          0.325ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.140ns
+
+  Minimum Data Path at Fast Process Corner: reset_Homade to Inst_debounce4/delay3_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X20Y39.DQ      Tcko                  0.200   reset_Homade
+                                                       reset_Homade
+    SLICE_X11Y38.SR      net (fanout=113)      0.606   reset_Homade
+    SLICE_X11Y38.CLK     Tremck      (-Th)    -0.139   Inst_debounce4/delay2<3>
+                                                       Inst_debounce4/delay3_0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.945ns (0.339ns logic, 0.606ns route)
+                                                       (35.9% logic, 64.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_debounce4/delay3_3 (SLICE_X11Y38.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.384ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               reset_Homade (FF)
+  Destination:          Inst_debounce4/delay3_3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.945ns (Levels of Logic = 0)
+  Clock Path Skew:      0.236ns (0.959 - 0.723)
+  Source Clock:         clk50 rising at 0.000ns
+  Destination Clock:    clk100 rising at 10.000ns
+  Clock Uncertainty:    0.325ns
+
+  Clock Uncertainty:          0.325ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.140ns
+
+  Minimum Data Path at Fast Process Corner: reset_Homade to Inst_debounce4/delay3_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X20Y39.DQ      Tcko                  0.200   reset_Homade
+                                                       reset_Homade
+    SLICE_X11Y38.SR      net (fanout=113)      0.606   reset_Homade
+    SLICE_X11Y38.CLK     Tremck      (-Th)    -0.139   Inst_debounce4/delay2<3>
+                                                       Inst_debounce4/delay3_3
+    -------------------------------------------------  ---------------------------
+    Total                                      0.945ns (0.339ns logic, 0.606ns route)
+                                                       (35.9% logic, 64.1% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk_gen_clk0 = PERIOD TIMEGRP "clk_gen_clk0" TS_clk_pin HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 8.270ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 1.730ns (578.035MHz) (Tbcper_I)
+  Physical resource: clk_gen/clkout1_buf/I0
+  Logical resource: clk_gen/clkout1_buf/I0
+  Location pin: BUFGMUX_X3Y13.I0
+  Clock network: clk_gen/clk0
+--------------------------------------------------------------------------------
+Slack: 9.570ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 0.430ns (2325.581MHz) (Tcp)
+  Physical resource: My_E190/XLXI_1/COUNT<3>/CLK
+  Logical resource: My_E190/XLXI_1/COUNT_0/CK
+  Location pin: SLICE_X12Y52.CLK
+  Clock network: clk100
+--------------------------------------------------------------------------------
+Slack: 9.570ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 0.430ns (2325.581MHz) (Tcp)
+  Physical resource: My_E190/XLXI_1/COUNT<3>/CLK
+  Logical resource: My_E190/XLXI_1/COUNT_1/CK
+  Location pin: SLICE_X12Y52.CLK
+  Clock network: clk100
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clk_gen_clkdv = PERIOD TIMEGRP "clk_gen_clkdv" TS_clk_pin 
+* 2 HIGH 50%;
+
+ 758313450 paths analyzed, 4991 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  15.815ns.
+--------------------------------------------------------------------------------
+
+Paths for end point my_Master/HCU_Master/PC_adr_7_3 (SLICE_X16Y54.CX), 8228 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     2.880ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               my_Master/HCU_Master/Inst_returnstack/stack_ptr_2 (FF)
+  Destination:          my_Master/HCU_Master/PC_adr_7_3 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      6.904ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.031ns (0.237 - 0.268)
+  Source Clock:         clk50 falling at 10.000ns
+  Destination Clock:    clk50 rising at 20.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: my_Master/HCU_Master/Inst_returnstack/stack_ptr_2 to my_Master/HCU_Master/PC_adr_7_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y61.CQ      Tcko                  0.391   my_Master/HCU_Master/Inst_returnstack/stack_ptr<3>
+                                                       my_Master/HCU_Master/Inst_returnstack/stack_ptr_2
+    SLICE_X19Y60.A1      net (fanout=10)       1.185   my_Master/HCU_Master/Inst_returnstack/stack_ptr<2>
+    SLICE_X19Y60.A       Tilo                  0.259   my_Master/Inst_mem_Master/data_in<30>
+                                                       my_Master/HCU_Master/Inst_returnstack/Mmux__n003431
+    SLICE_X22Y61.A3      net (fanout=4)        1.081   my_Master/HCU_Master/Inst_returnstack/_n0034<2>
+    SLICE_X22Y61.A       Tilo                  0.203   my_Master/HCU_Master/Inst_returnstack/_n0034<0>
+                                                       my_Master/HCU_Master/Inst_returnstack/Mram_RAM2_RAMA_D1
+    SLICE_X21Y53.A3      net (fanout=2)        1.082   my_Master/HCU_Master/retbus<7>
+    SLICE_X21Y53.A       Tilo                  0.259   my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1605
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1607
+    SLICE_X23Y53.B4      net (fanout=1)        0.513   my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1606
+    SLICE_X23Y53.B       Tilo                  0.259   my_Master/HCU_Master/PC_adr<7>
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1608_SW0
+    SLICE_X23Y53.A5      net (fanout=1)        0.187   N647
+    SLICE_X23Y53.A       Tilo                  0.259   my_Master/HCU_Master/PC_adr<7>
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1608
+    SLICE_X16Y54.CX      net (fanout=4)        1.090   my_Master/HCU_Master/etat[1]_Startadres[31]_mux_119_OUT<7>
+    SLICE_X16Y54.CLK     Tdick                 0.136   my_Master/HCU_Master/PC_adr_7_4
+                                                       my_Master/HCU_Master/PC_adr_7_3
+    -------------------------------------------------  ---------------------------
+    Total                                      6.904ns (1.766ns logic, 5.138ns route)
+                                                       (25.6% logic, 74.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     3.005ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               my_Master/HCU_Master/Inst_returnstack/stack_ptr_0 (FF)
+  Destination:          my_Master/HCU_Master/PC_adr_7_3 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      6.779ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.031ns (0.237 - 0.268)
+  Source Clock:         clk50 falling at 10.000ns
+  Destination Clock:    clk50 rising at 20.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: my_Master/HCU_Master/Inst_returnstack/stack_ptr_0 to my_Master/HCU_Master/PC_adr_7_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y61.AQ      Tcko                  0.391   my_Master/HCU_Master/Inst_returnstack/stack_ptr<3>
+                                                       my_Master/HCU_Master/Inst_returnstack/stack_ptr_0
+    SLICE_X19Y60.A3      net (fanout=10)       1.060   my_Master/HCU_Master/Inst_returnstack/stack_ptr<0>
+    SLICE_X19Y60.A       Tilo                  0.259   my_Master/Inst_mem_Master/data_in<30>
+                                                       my_Master/HCU_Master/Inst_returnstack/Mmux__n003431
+    SLICE_X22Y61.A3      net (fanout=4)        1.081   my_Master/HCU_Master/Inst_returnstack/_n0034<2>
+    SLICE_X22Y61.A       Tilo                  0.203   my_Master/HCU_Master/Inst_returnstack/_n0034<0>
+                                                       my_Master/HCU_Master/Inst_returnstack/Mram_RAM2_RAMA_D1
+    SLICE_X21Y53.A3      net (fanout=2)        1.082   my_Master/HCU_Master/retbus<7>
+    SLICE_X21Y53.A       Tilo                  0.259   my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1605
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1607
+    SLICE_X23Y53.B4      net (fanout=1)        0.513   my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1606
+    SLICE_X23Y53.B       Tilo                  0.259   my_Master/HCU_Master/PC_adr<7>
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1608_SW0
+    SLICE_X23Y53.A5      net (fanout=1)        0.187   N647
+    SLICE_X23Y53.A       Tilo                  0.259   my_Master/HCU_Master/PC_adr<7>
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1608
+    SLICE_X16Y54.CX      net (fanout=4)        1.090   my_Master/HCU_Master/etat[1]_Startadres[31]_mux_119_OUT<7>
+    SLICE_X16Y54.CLK     Tdick                 0.136   my_Master/HCU_Master/PC_adr_7_4
+                                                       my_Master/HCU_Master/PC_adr_7_3
+    -------------------------------------------------  ---------------------------
+    Total                                      6.779ns (1.766ns logic, 5.013ns route)
+                                                       (26.1% logic, 73.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     3.029ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               my_Master/HCU_Master/Inst_returnstack/stack_ptr_3 (FF)
+  Destination:          my_Master/HCU_Master/PC_adr_7_3 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      6.755ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.031ns (0.237 - 0.268)
+  Source Clock:         clk50 falling at 10.000ns
+  Destination Clock:    clk50 rising at 20.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: my_Master/HCU_Master/Inst_returnstack/stack_ptr_3 to my_Master/HCU_Master/PC_adr_7_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y61.DQ      Tcko                  0.391   my_Master/HCU_Master/Inst_returnstack/stack_ptr<3>
+                                                       my_Master/HCU_Master/Inst_returnstack/stack_ptr_3
+    SLICE_X19Y60.A4      net (fanout=10)       1.036   my_Master/HCU_Master/Inst_returnstack/stack_ptr<3>
+    SLICE_X19Y60.A       Tilo                  0.259   my_Master/Inst_mem_Master/data_in<30>
+                                                       my_Master/HCU_Master/Inst_returnstack/Mmux__n003431
+    SLICE_X22Y61.A3      net (fanout=4)        1.081   my_Master/HCU_Master/Inst_returnstack/_n0034<2>
+    SLICE_X22Y61.A       Tilo                  0.203   my_Master/HCU_Master/Inst_returnstack/_n0034<0>
+                                                       my_Master/HCU_Master/Inst_returnstack/Mram_RAM2_RAMA_D1
+    SLICE_X21Y53.A3      net (fanout=2)        1.082   my_Master/HCU_Master/retbus<7>
+    SLICE_X21Y53.A       Tilo                  0.259   my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1605
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1607
+    SLICE_X23Y53.B4      net (fanout=1)        0.513   my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1606
+    SLICE_X23Y53.B       Tilo                  0.259   my_Master/HCU_Master/PC_adr<7>
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1608_SW0
+    SLICE_X23Y53.A5      net (fanout=1)        0.187   N647
+    SLICE_X23Y53.A       Tilo                  0.259   my_Master/HCU_Master/PC_adr<7>
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1608
+    SLICE_X16Y54.CX      net (fanout=4)        1.090   my_Master/HCU_Master/etat[1]_Startadres[31]_mux_119_OUT<7>
+    SLICE_X16Y54.CLK     Tdick                 0.136   my_Master/HCU_Master/PC_adr_7_4
+                                                       my_Master/HCU_Master/PC_adr_7_3
+    -------------------------------------------------  ---------------------------
+    Total                                      6.755ns (1.766ns logic, 4.989ns route)
+                                                       (26.1% logic, 73.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point my_Master/HCU_Master/PC_adr_7_4 (SLICE_X16Y54.DX), 8228 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     2.887ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               my_Master/HCU_Master/Inst_returnstack/stack_ptr_2 (FF)
+  Destination:          my_Master/HCU_Master/PC_adr_7_4 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      6.897ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.031ns (0.237 - 0.268)
+  Source Clock:         clk50 falling at 10.000ns
+  Destination Clock:    clk50 rising at 20.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: my_Master/HCU_Master/Inst_returnstack/stack_ptr_2 to my_Master/HCU_Master/PC_adr_7_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y61.CQ      Tcko                  0.391   my_Master/HCU_Master/Inst_returnstack/stack_ptr<3>
+                                                       my_Master/HCU_Master/Inst_returnstack/stack_ptr_2
+    SLICE_X19Y60.A1      net (fanout=10)       1.185   my_Master/HCU_Master/Inst_returnstack/stack_ptr<2>
+    SLICE_X19Y60.A       Tilo                  0.259   my_Master/Inst_mem_Master/data_in<30>
+                                                       my_Master/HCU_Master/Inst_returnstack/Mmux__n003431
+    SLICE_X22Y61.A3      net (fanout=4)        1.081   my_Master/HCU_Master/Inst_returnstack/_n0034<2>
+    SLICE_X22Y61.A       Tilo                  0.203   my_Master/HCU_Master/Inst_returnstack/_n0034<0>
+                                                       my_Master/HCU_Master/Inst_returnstack/Mram_RAM2_RAMA_D1
+    SLICE_X21Y53.A3      net (fanout=2)        1.082   my_Master/HCU_Master/retbus<7>
+    SLICE_X21Y53.A       Tilo                  0.259   my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1605
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1607
+    SLICE_X23Y53.B4      net (fanout=1)        0.513   my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1606
+    SLICE_X23Y53.B       Tilo                  0.259   my_Master/HCU_Master/PC_adr<7>
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1608_SW0
+    SLICE_X23Y53.A5      net (fanout=1)        0.187   N647
+    SLICE_X23Y53.A       Tilo                  0.259   my_Master/HCU_Master/PC_adr<7>
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1608
+    SLICE_X16Y54.DX      net (fanout=4)        1.083   my_Master/HCU_Master/etat[1]_Startadres[31]_mux_119_OUT<7>
+    SLICE_X16Y54.CLK     Tdick                 0.136   my_Master/HCU_Master/PC_adr_7_4
+                                                       my_Master/HCU_Master/PC_adr_7_4
+    -------------------------------------------------  ---------------------------
+    Total                                      6.897ns (1.766ns logic, 5.131ns route)
+                                                       (25.6% logic, 74.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     3.012ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               my_Master/HCU_Master/Inst_returnstack/stack_ptr_0 (FF)
+  Destination:          my_Master/HCU_Master/PC_adr_7_4 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      6.772ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.031ns (0.237 - 0.268)
+  Source Clock:         clk50 falling at 10.000ns
+  Destination Clock:    clk50 rising at 20.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: my_Master/HCU_Master/Inst_returnstack/stack_ptr_0 to my_Master/HCU_Master/PC_adr_7_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y61.AQ      Tcko                  0.391   my_Master/HCU_Master/Inst_returnstack/stack_ptr<3>
+                                                       my_Master/HCU_Master/Inst_returnstack/stack_ptr_0
+    SLICE_X19Y60.A3      net (fanout=10)       1.060   my_Master/HCU_Master/Inst_returnstack/stack_ptr<0>
+    SLICE_X19Y60.A       Tilo                  0.259   my_Master/Inst_mem_Master/data_in<30>
+                                                       my_Master/HCU_Master/Inst_returnstack/Mmux__n003431
+    SLICE_X22Y61.A3      net (fanout=4)        1.081   my_Master/HCU_Master/Inst_returnstack/_n0034<2>
+    SLICE_X22Y61.A       Tilo                  0.203   my_Master/HCU_Master/Inst_returnstack/_n0034<0>
+                                                       my_Master/HCU_Master/Inst_returnstack/Mram_RAM2_RAMA_D1
+    SLICE_X21Y53.A3      net (fanout=2)        1.082   my_Master/HCU_Master/retbus<7>
+    SLICE_X21Y53.A       Tilo                  0.259   my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1605
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1607
+    SLICE_X23Y53.B4      net (fanout=1)        0.513   my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1606
+    SLICE_X23Y53.B       Tilo                  0.259   my_Master/HCU_Master/PC_adr<7>
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1608_SW0
+    SLICE_X23Y53.A5      net (fanout=1)        0.187   N647
+    SLICE_X23Y53.A       Tilo                  0.259   my_Master/HCU_Master/PC_adr<7>
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1608
+    SLICE_X16Y54.DX      net (fanout=4)        1.083   my_Master/HCU_Master/etat[1]_Startadres[31]_mux_119_OUT<7>
+    SLICE_X16Y54.CLK     Tdick                 0.136   my_Master/HCU_Master/PC_adr_7_4
+                                                       my_Master/HCU_Master/PC_adr_7_4
+    -------------------------------------------------  ---------------------------
+    Total                                      6.772ns (1.766ns logic, 5.006ns route)
+                                                       (26.1% logic, 73.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     3.036ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               my_Master/HCU_Master/Inst_returnstack/stack_ptr_3 (FF)
+  Destination:          my_Master/HCU_Master/PC_adr_7_4 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      6.748ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.031ns (0.237 - 0.268)
+  Source Clock:         clk50 falling at 10.000ns
+  Destination Clock:    clk50 rising at 20.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: my_Master/HCU_Master/Inst_returnstack/stack_ptr_3 to my_Master/HCU_Master/PC_adr_7_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y61.DQ      Tcko                  0.391   my_Master/HCU_Master/Inst_returnstack/stack_ptr<3>
+                                                       my_Master/HCU_Master/Inst_returnstack/stack_ptr_3
+    SLICE_X19Y60.A4      net (fanout=10)       1.036   my_Master/HCU_Master/Inst_returnstack/stack_ptr<3>
+    SLICE_X19Y60.A       Tilo                  0.259   my_Master/Inst_mem_Master/data_in<30>
+                                                       my_Master/HCU_Master/Inst_returnstack/Mmux__n003431
+    SLICE_X22Y61.A3      net (fanout=4)        1.081   my_Master/HCU_Master/Inst_returnstack/_n0034<2>
+    SLICE_X22Y61.A       Tilo                  0.203   my_Master/HCU_Master/Inst_returnstack/_n0034<0>
+                                                       my_Master/HCU_Master/Inst_returnstack/Mram_RAM2_RAMA_D1
+    SLICE_X21Y53.A3      net (fanout=2)        1.082   my_Master/HCU_Master/retbus<7>
+    SLICE_X21Y53.A       Tilo                  0.259   my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1605
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1607
+    SLICE_X23Y53.B4      net (fanout=1)        0.513   my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1606
+    SLICE_X23Y53.B       Tilo                  0.259   my_Master/HCU_Master/PC_adr<7>
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1608_SW0
+    SLICE_X23Y53.A5      net (fanout=1)        0.187   N647
+    SLICE_X23Y53.A       Tilo                  0.259   my_Master/HCU_Master/PC_adr<7>
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1608
+    SLICE_X16Y54.DX      net (fanout=4)        1.083   my_Master/HCU_Master/etat[1]_Startadres[31]_mux_119_OUT<7>
+    SLICE_X16Y54.CLK     Tdick                 0.136   my_Master/HCU_Master/PC_adr_7_4
+                                                       my_Master/HCU_Master/PC_adr_7_4
+    -------------------------------------------------  ---------------------------
+    Total                                      6.748ns (1.766ns logic, 4.982ns route)
+                                                       (26.2% logic, 73.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point my_Master/HCU_Master/PC_adr_6_4 (SLICE_X17Y53.DX), 9860 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     2.947ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               my_Master/HCU_Master/Inst_returnstack/stack_ptr_2 (FF)
+  Destination:          my_Master/HCU_Master/PC_adr_6_4 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      6.839ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.029ns (0.239 - 0.268)
+  Source Clock:         clk50 falling at 10.000ns
+  Destination Clock:    clk50 rising at 20.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: my_Master/HCU_Master/Inst_returnstack/stack_ptr_2 to my_Master/HCU_Master/PC_adr_6_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y61.CQ      Tcko                  0.391   my_Master/HCU_Master/Inst_returnstack/stack_ptr<3>
+                                                       my_Master/HCU_Master/Inst_returnstack/stack_ptr_2
+    SLICE_X19Y60.A1      net (fanout=10)       1.185   my_Master/HCU_Master/Inst_returnstack/stack_ptr<2>
+    SLICE_X19Y60.A       Tilo                  0.259   my_Master/Inst_mem_Master/data_in<30>
+                                                       my_Master/HCU_Master/Inst_returnstack/Mmux__n003431
+    SLICE_X22Y61.A3      net (fanout=4)        1.081   my_Master/HCU_Master/Inst_returnstack/_n0034<2>
+    SLICE_X22Y61.AMUX    Tilo                  0.261   my_Master/HCU_Master/Inst_returnstack/_n0034<0>
+                                                       my_Master/HCU_Master/Inst_returnstack/Mram_RAM2_RAMA
+    SLICE_X21Y55.A4      net (fanout=2)        0.929   my_Master/HCU_Master/retbus<6>
+    SLICE_X21Y55.A       Tilo                  0.259   my_Master/HCU_Master/PC_adr_4_3
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1587
+    SLICE_X24Y55.D3      net (fanout=1)        0.504   my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1586
+    SLICE_X24Y55.D       Tilo                  0.205   my_Master/HCU_Master/PC_adr<6>
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1588_SW0
+    SLICE_X24Y55.C6      net (fanout=1)        0.118   N651
+    SLICE_X24Y55.C       Tilo                  0.205   my_Master/HCU_Master/PC_adr<6>
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1588
+    SLICE_X17Y53.DX      net (fanout=4)        1.379   my_Master/HCU_Master/etat[1]_Startadres[31]_mux_119_OUT<6>
+    SLICE_X17Y53.CLK     Tdick                 0.063   my_Master/HCU_Master/PC_adr_6_4
+                                                       my_Master/HCU_Master/PC_adr_6_4
+    -------------------------------------------------  ---------------------------
+    Total                                      6.839ns (1.643ns logic, 5.196ns route)
+                                                       (24.0% logic, 76.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     3.072ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               my_Master/HCU_Master/Inst_returnstack/stack_ptr_0 (FF)
+  Destination:          my_Master/HCU_Master/PC_adr_6_4 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      6.714ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.029ns (0.239 - 0.268)
+  Source Clock:         clk50 falling at 10.000ns
+  Destination Clock:    clk50 rising at 20.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: my_Master/HCU_Master/Inst_returnstack/stack_ptr_0 to my_Master/HCU_Master/PC_adr_6_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y61.AQ      Tcko                  0.391   my_Master/HCU_Master/Inst_returnstack/stack_ptr<3>
+                                                       my_Master/HCU_Master/Inst_returnstack/stack_ptr_0
+    SLICE_X19Y60.A3      net (fanout=10)       1.060   my_Master/HCU_Master/Inst_returnstack/stack_ptr<0>
+    SLICE_X19Y60.A       Tilo                  0.259   my_Master/Inst_mem_Master/data_in<30>
+                                                       my_Master/HCU_Master/Inst_returnstack/Mmux__n003431
+    SLICE_X22Y61.A3      net (fanout=4)        1.081   my_Master/HCU_Master/Inst_returnstack/_n0034<2>
+    SLICE_X22Y61.AMUX    Tilo                  0.261   my_Master/HCU_Master/Inst_returnstack/_n0034<0>
+                                                       my_Master/HCU_Master/Inst_returnstack/Mram_RAM2_RAMA
+    SLICE_X21Y55.A4      net (fanout=2)        0.929   my_Master/HCU_Master/retbus<6>
+    SLICE_X21Y55.A       Tilo                  0.259   my_Master/HCU_Master/PC_adr_4_3
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1587
+    SLICE_X24Y55.D3      net (fanout=1)        0.504   my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1586
+    SLICE_X24Y55.D       Tilo                  0.205   my_Master/HCU_Master/PC_adr<6>
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1588_SW0
+    SLICE_X24Y55.C6      net (fanout=1)        0.118   N651
+    SLICE_X24Y55.C       Tilo                  0.205   my_Master/HCU_Master/PC_adr<6>
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1588
+    SLICE_X17Y53.DX      net (fanout=4)        1.379   my_Master/HCU_Master/etat[1]_Startadres[31]_mux_119_OUT<6>
+    SLICE_X17Y53.CLK     Tdick                 0.063   my_Master/HCU_Master/PC_adr_6_4
+                                                       my_Master/HCU_Master/PC_adr_6_4
+    -------------------------------------------------  ---------------------------
+    Total                                      6.714ns (1.643ns logic, 5.071ns route)
+                                                       (24.5% logic, 75.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     3.096ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               my_Master/HCU_Master/Inst_returnstack/stack_ptr_3 (FF)
+  Destination:          my_Master/HCU_Master/PC_adr_6_4 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      6.690ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.029ns (0.239 - 0.268)
+  Source Clock:         clk50 falling at 10.000ns
+  Destination Clock:    clk50 rising at 20.000ns
+  Clock Uncertainty:    0.185ns
+
+  Clock Uncertainty:          0.185ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: my_Master/HCU_Master/Inst_returnstack/stack_ptr_3 to my_Master/HCU_Master/PC_adr_6_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y61.DQ      Tcko                  0.391   my_Master/HCU_Master/Inst_returnstack/stack_ptr<3>
+                                                       my_Master/HCU_Master/Inst_returnstack/stack_ptr_3
+    SLICE_X19Y60.A4      net (fanout=10)       1.036   my_Master/HCU_Master/Inst_returnstack/stack_ptr<3>
+    SLICE_X19Y60.A       Tilo                  0.259   my_Master/Inst_mem_Master/data_in<30>
+                                                       my_Master/HCU_Master/Inst_returnstack/Mmux__n003431
+    SLICE_X22Y61.A3      net (fanout=4)        1.081   my_Master/HCU_Master/Inst_returnstack/_n0034<2>
+    SLICE_X22Y61.AMUX    Tilo                  0.261   my_Master/HCU_Master/Inst_returnstack/_n0034<0>
+                                                       my_Master/HCU_Master/Inst_returnstack/Mram_RAM2_RAMA
+    SLICE_X21Y55.A4      net (fanout=2)        0.929   my_Master/HCU_Master/retbus<6>
+    SLICE_X21Y55.A       Tilo                  0.259   my_Master/HCU_Master/PC_adr_4_3
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1587
+    SLICE_X24Y55.D3      net (fanout=1)        0.504   my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1586
+    SLICE_X24Y55.D       Tilo                  0.205   my_Master/HCU_Master/PC_adr<6>
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1588_SW0
+    SLICE_X24Y55.C6      net (fanout=1)        0.118   N651
+    SLICE_X24Y55.C       Tilo                  0.205   my_Master/HCU_Master/PC_adr<6>
+                                                       my_Master/HCU_Master/Mmux_PWR_32_o_PC_adr[1]_mux_82_OUT1588
+    SLICE_X17Y53.DX      net (fanout=4)        1.379   my_Master/HCU_Master/etat[1]_Startadres[31]_mux_119_OUT<6>
+    SLICE_X17Y53.CLK     Tdick                 0.063   my_Master/HCU_Master/PC_adr_6_4
+                                                       my_Master/HCU_Master/PC_adr_6_4
+    -------------------------------------------------  ---------------------------
+    Total                                      6.690ns (1.643ns logic, 5.047ns route)
+                                                       (24.6% logic, 75.4% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clk_gen_clkdv = PERIOD TIMEGRP "clk_gen_clkdv" TS_clk_pin * 2 HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point my_Master/Mwaitbtn.Inst_IPwaitBt/pls2/XLXI_1 (SLICE_X11Y36.A6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.030ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_debounce4/delay3_2 (FF)
+  Destination:          my_Master/Mwaitbtn.Inst_IPwaitBt/pls2/XLXI_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.586ns (Levels of Logic = 1)
+  Clock Path Skew:      0.231ns (0.965 - 0.734)
+  Source Clock:         clk100 rising at 20.000ns
+  Destination Clock:    clk50 rising at 20.000ns
+  Clock Uncertainty:    0.325ns
+
+  Clock Uncertainty:          0.325ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.140ns
+
+  Minimum Data Path at Fast Process Corner: Inst_debounce4/delay3_2 to my_Master/Mwaitbtn.Inst_IPwaitBt/pls2/XLXI_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y38.CMUX    Tshcko                0.244   Inst_debounce4/delay2<3>
+                                                       Inst_debounce4/delay3_2
+    SLICE_X11Y36.A6      net (fanout=1)        0.127   Inst_debounce4/delay3<2>
+    SLICE_X11Y36.CLK     Tah         (-Th)    -0.215   my_Master/Mwaitbtn.Inst_IPwaitBt/pls2/XLXN_6
+                                                       Inst_debounce4/outp<2>1
+                                                       my_Master/Mwaitbtn.Inst_IPwaitBt/pls2/XLXI_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.586ns (0.459ns logic, 0.127ns route)
+                                                       (78.3% logic, 21.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point my_Master/Mwaitbtn.Inst_IPwaitBt/pls1/XLXI_1 (SLICE_X10Y36.A6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.090ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_debounce4/delay3_1 (FF)
+  Destination:          my_Master/Mwaitbtn.Inst_IPwaitBt/pls1/XLXI_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.646ns (Levels of Logic = 1)
+  Clock Path Skew:      0.231ns (0.965 - 0.734)
+  Source Clock:         clk100 rising at 20.000ns
+  Destination Clock:    clk50 rising at 20.000ns
+  Clock Uncertainty:    0.325ns
+
+  Clock Uncertainty:          0.325ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.140ns
+
+  Minimum Data Path at Fast Process Corner: Inst_debounce4/delay3_1 to my_Master/Mwaitbtn.Inst_IPwaitBt/pls1/XLXI_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y38.BMUX    Tshcko                0.244   Inst_debounce4/delay2<3>
+                                                       Inst_debounce4/delay3_1
+    SLICE_X10Y36.A6      net (fanout=1)        0.205   Inst_debounce4/delay3<1>
+    SLICE_X10Y36.CLK     Tah         (-Th)    -0.197   my_Master/Mwaitbtn.Inst_IPwaitBt/pls1/XLXN_6
+                                                       Inst_debounce4/outp<1>1
+                                                       my_Master/Mwaitbtn.Inst_IPwaitBt/pls1/XLXI_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.646ns (0.441ns logic, 0.205ns route)
+                                                       (68.3% logic, 31.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point my_Master/Mwaitbtn.Inst_IPwaitBt/pls2/XLXI_1 (SLICE_X11Y36.A5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.127ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_debounce4/delay2_2 (FF)
+  Destination:          my_Master/Mwaitbtn.Inst_IPwaitBt/pls2/XLXI_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.683ns (Levels of Logic = 1)
+  Clock Path Skew:      0.231ns (0.965 - 0.734)
+  Source Clock:         clk100 rising at 20.000ns
+  Destination Clock:    clk50 rising at 20.000ns
+  Clock Uncertainty:    0.325ns
+
+  Clock Uncertainty:          0.325ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.300ns
+    Phase Error (PE):           0.140ns
+
+  Minimum Data Path at Fast Process Corner: Inst_debounce4/delay2_2 to my_Master/Mwaitbtn.Inst_IPwaitBt/pls2/XLXI_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y38.CQ      Tcko                  0.198   Inst_debounce4/delay2<3>
+                                                       Inst_debounce4/delay2_2
+    SLICE_X11Y36.A5      net (fanout=2)        0.270   Inst_debounce4/delay2<2>
+    SLICE_X11Y36.CLK     Tah         (-Th)    -0.215   my_Master/Mwaitbtn.Inst_IPwaitBt/pls2/XLXN_6
+                                                       Inst_debounce4/outp<2>1
+                                                       my_Master/Mwaitbtn.Inst_IPwaitBt/pls2/XLXI_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.683ns (0.413ns logic, 0.270ns route)
+                                                       (60.5% logic, 39.5% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk_gen_clkdv = PERIOD TIMEGRP "clk_gen_clkdv" TS_clk_pin * 2 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 18.270ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 1.730ns (578.035MHz) (Tbcper_I)
+  Physical resource: clk_gen/clkout2_buf/I0
+  Logical resource: clk_gen/clkout2_buf/I0
+  Location pin: BUFGMUX_X2Y3.I0
+  Clock network: clk_gen/clkdv
+--------------------------------------------------------------------------------
+Slack: 18.962ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 1.038ns (963.391MHz) (Tcp)
+  Physical resource: my_Master/Stack_Master/XLXN_17<7>/CLK
+  Logical resource: my_Master/Stack_Master/ram0/Mram_ram2/CLK
+  Location pin: SLICE_X2Y25.CLK
+  Clock network: clk50
+--------------------------------------------------------------------------------
+Slack: 18.962ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 1.038ns (963.391MHz) (Tcp)
+  Physical resource: my_Master/Stack_Master/XLXN_17<7>/CLK
+  Logical resource: my_Master/Stack_Master/ram0/Mram_ram1/CLK
+  Location pin: SLICE_X2Y25.CLK
+  Clock network: clk50
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_clk_pin
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_clk_pin                     |     10.000ns|      5.340ns|      7.907ns|            0|            0|            0|    758313925|
+| TS_clk_gen_clk0               |     10.000ns|      4.785ns|          N/A|            0|            0|          475|            0|
+| TS_clk_gen_clkdv              |     20.000ns|     15.815ns|          N/A|            0|            0|    758313450|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock mclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+mclk           |   15.815|    7.120|    5.537|    6.904|
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 758313925 paths, 0 nets, and 13811 connections
+
+Design statistics:
+   Minimum period:  15.815ns{1}   (Maximum frequency:  63.231MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Tue Oct 20 18:00:14 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 334 MB
+
+
+

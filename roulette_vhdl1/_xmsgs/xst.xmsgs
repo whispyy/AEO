@@ -5,10 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="806" delta="new" >"/home/m1/durand/Documents/AEO/roulette_vhdl1/roulette.vhd" Line 94: Syntax error near &quot;<arg fmt="%s" index="1">mon_afficheur</arg>&quot;.
+<msg type="error" file="HDLCompiler" num="806" delta="new" >"/home/m1/durand/Documents/AEO/roulette_vhdl1/roulette.vhd" Line 88: Syntax error near &quot;<arg fmt="%s" index="1">Inst_rdm</arg>&quot;.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="806" delta="old" >"/home/m1/durand/Documents/AEO/roulette_vhdl1/roulette.vhd" Line 129: Syntax error near &quot;<arg fmt="%s" index="1">end</arg>&quot;.
+<msg type="error" file="HDLCompiler" num="806" delta="old" >"/home/m1/durand/Documents/AEO/roulette_vhdl1/roulette.vhd" Line 127: Syntax error near &quot;<arg fmt="%s" index="1">end</arg>&quot;.
 </msg>
 
 </messages>

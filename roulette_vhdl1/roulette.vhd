@@ -121,9 +121,7 @@ architecture Behavioral of roulette is
 	afficheur_in <= x"000" & random;
 	
 	signal afficheur_in : std_logic_vector(15 downto 0);
-
 	signal random : std_logic_vector(3 downto 0);
-
 	signal clk100, clk3, rnvp, E190: std_logic;
 
 end Behavioral;

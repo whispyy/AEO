@@ -1,0 +1,15 @@
+0c00 0000 000c ffff branchement absolu du compteur ordinal sur 000c
+201f                range 1f sur le sommet de la pile
+	a402                wait button
+	8804                Déclenche l'ip 8     xx = 0 yy = 1 s = 0 (moins d'un cycle)
+					a <= Switch(7:0)
+	8003                Led <= (7:0)
+
+a002               a(15:0) s'affiche sur les 7 seg (bufout)
+	03fb           Branchement relatif -6
+
+
+
+_____________________________
+c820    additionneur
+
