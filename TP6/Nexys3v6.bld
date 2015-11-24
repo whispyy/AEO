@@ -5,7 +5,7 @@ Command Line: /opt/Xilinx/12.4/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
 ise -dd _ngo -sd ipcore_dir -aul -nt timestamp -uc Nexys3.ucf -p
 xc6slx16-csg324-3 Nexys3v6.ngc Nexys3v6.ngd
 
-Reading NGO file "/home/m1/durand/Documents/AEO/Nexys3V6/Nexys3v6.ngc" ...
+Reading NGO file "/home/m1/durand/Documents/AEO/TP6/Nexys3v6.ngc" ...
 Loading design module "ipcore_dir/incdec.ngc"...
 Applying constraints in "ipcore_dir/incdec.ncf" to module
 "ipcore_dir/incdec.ngc"...
@@ -55,7 +55,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 265224 kilobytes
+Total memory usage is 265352 kilobytes
 
 Writing NGD file "Nexys3v6.ngd" ...
 Total REAL time to NGDBUILD completion:  3 sec

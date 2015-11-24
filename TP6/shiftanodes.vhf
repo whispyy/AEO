@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 12.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : shiftanodes.vhf
--- /___/   /\     Timestamp : 10/20/2015 17:59:07
+-- /___/   /\     Timestamp : 11/24/2015 18:19:37
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -sympath /home/m1/durand/Documents/AEO/Nexys3V6/ipcore_dir -intstyle ise -family spartan6 -flat -suppress -vhdl /home/m1/durand/Documents/AEO/Nexys3V6/shiftanodes.vhf -w /home/m1/durand/Documents/AEO/Nexys3V6/shiftanodes.sch
+--Command: sch2hdl -sympath /home/m1/durand/Documents/AEO/TP6/ipcore_dir -intstyle ise -family spartan6 -flat -suppress -vhdl /home/m1/durand/Documents/AEO/TP6/shiftanodes.vhf -w /home/m1/durand/Documents/AEO/TP6/shiftanodes.sch
 --Design Name: shiftanodes
 --Device: spartan6
 --Purpose:

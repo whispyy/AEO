@@ -413,14 +413,14 @@ COMPONENT IP_MEcom
 		);
 	END COMPONENT;
 	
---COMPONENT IP_Rdm
---	GENERIC (Mycode : std_logic_vector (10 downto 0));
---	PORT(
---		clk , reset: IN std_logic;
---		IPcode : IN std_logic_vector(10 downto 0);          
---		Tout : OUT std_logic_vector(31 downto 0)
---		);
---	END COMPONENT;
+COMPONENT IP_Rdm
+	GENERIC (Mycode : std_logic_vector (10 downto 0));
+	PORT(
+			clk , reset: IN std_logic;
+			IPcode : IN std_logic_vector(10 downto 0);          
+			Tout : OUT std_logic_vector(31 downto 0)
+			);
+END COMPONENT;
 	
 --COMPONENT IP_muladd
 --	GENERIC (Mycode : std_logic_vector (10 downto 0));
@@ -879,16 +879,16 @@ slv: IF NBSLAVE > 0 generate
 
 end generate slv;
 
---Mrdm : if genM_rdm = '1' generate
---Inst_IP_Rdm: IP_Rdm 
---		generic map (Mycode =>IPRdm)
---		PORT MAP(
---		clk => clock,
---		reset => reset,
---		IPcode => Icode,
---		Tout => Tbusst
---	);
---end generate Mrdm;
+Mrdm : if genM_rdm = '1' generate
+Inst_IP_Rdm: IP_Rdm 
+		generic map (Mycode =>IPRdm)
+		PORT MAP(
+		clk => clock,
+		reset => reset,
+		IPcode => Icode,
+		Tout => Tbusst
+	);
+end generate Mrdm;
 	
 --Mmuladd : if genM_muladd = '1' generate
 --Inst_IP_muladd: IP_muladd 
